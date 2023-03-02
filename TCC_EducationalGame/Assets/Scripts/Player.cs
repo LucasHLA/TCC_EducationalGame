@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         
-        if(horizontal == 0)
+        if(horizontal == 0 && rb.velocity.y == 0f)
         {
             state = State.Idle;
         }
@@ -65,9 +65,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground))
         {
-            state = State.Jump;
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            
+                state = State.Jump;
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        if(rb.velocity.y > 0.01f)
+        {
+            state = State.Jump;        
         }
     }
 }
