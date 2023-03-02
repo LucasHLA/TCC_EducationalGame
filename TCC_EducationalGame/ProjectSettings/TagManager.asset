@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - letter
+  - F
+  - L
+  - O
+  - R
   layers:
   - Default
   - TransparentFX
@@ -11,7 +16,7 @@ TagManager:
   - ground
   - Water
   - UI
-  - 
+  - letter
   - 
   - 
   - 
@@ -49,6 +54,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 988247779
+    locked: 0
+  - name: Letters
+    uniqueID: 3892842441
     locked: 0
   - name: Entity
     uniqueID: 986073869

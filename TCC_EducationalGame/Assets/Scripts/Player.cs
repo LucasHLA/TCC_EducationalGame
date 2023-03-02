@@ -71,7 +71,20 @@ public class Player : MonoBehaviour
 
         if(rb.velocity.y > 0.01f)
         {
-            state = State.Jump;        
+            state = State.Jump; 
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        int letterLayer = LayerMask.NameToLayer("letter");
+
+        if (other.gameObject.layer == letterLayer)
+        {
+            GameController.instance.tag = other.gameObject.tag.ToString();
+            Destroy(other.gameObject);
+            GameController.instance.index++;
         }
     }
 }
