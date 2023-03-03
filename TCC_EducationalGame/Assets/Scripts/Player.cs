@@ -12,8 +12,9 @@ public class Player : MonoBehaviour
 
     [Header("State Machine")]
     private Animator anim;
-    [SerializeField] private enum State {Idle, Walk, Jump};
+    private enum State {Idle, Walk, Jump, Using};
     private State state = State.Idle;
+    public bool canUse = false;
 
     [Header("Jumping related")]
     [SerializeField] private LayerMask ground;
@@ -29,9 +30,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Jump();
-
         anim.SetInteger("State", (int)state);
+        Jump();
+        if (canUse)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                state = State.Using;
+            }
+        }
+        
     }
     private void FixedUpdate()
     {
@@ -85,6 +93,11 @@ public class Player : MonoBehaviour
             GameController.instance.letterTag = other.gameObject.tag.ToString();
             Destroy(other.gameObject);
             GameController.instance.index++;
+        }
+
+        if (other.gameObject.CompareTag("Computer"))
+        {
+            canUse = true;
         }
     }
 }
