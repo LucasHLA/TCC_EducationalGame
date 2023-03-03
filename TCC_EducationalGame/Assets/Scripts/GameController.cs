@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public GameObject[] lettersController;
     private LettersInUI lUI;
     public int index = -1;
-    public string tag;
+    public string letterTag;
     void Start()
     {
         instance = this;
@@ -20,29 +20,26 @@ public class GameController : MonoBehaviour
     void Update()
     {
         lUI.index = index;
-        //CheckingLetters();
+        CheckingLetters();
     }
 
     private void CheckingLetters()
     {
-        /*We need to make another switch, to check wich letter is being taken.
-        to make sure they dont get the wrong letter and we show the right one, we need to check the tags*/
-
-        switch (index)
+        switch (letterTag)
         {
-            case 0:
+            case "F":
                 lUI.index = 0;
                 break;
 
-            case 1:
+            case "L":
                 lUI.index = 1;
                 break;
 
-            case 2:
+            case "O":
                 lUI.index = 2;
                 break;
 
-            case 3:
+            case "R":
                 lUI.index = 3;
                 break;
         }

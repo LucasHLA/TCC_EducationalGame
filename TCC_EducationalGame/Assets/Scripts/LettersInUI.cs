@@ -11,18 +11,13 @@ public class LettersInUI : MonoBehaviour
     public Image[] letters;
     public GameObject[] lettersInOrder;
     public int index = -1;
-    void Start()
-    {
-        
-        for (int i = 0; i <= lettersInOrder.Length; i++)
-        {
-            lettersInOrder[i].SetActive(false);
-        } 
-    }
-
+    
     void Update()
     {
-        lettersInOrder[index].SetActive(true);
-        letters[index].sprite = letter.lettersSprites[index];
+        if(index >= 0)
+        {
+            lettersInOrder[index].SetActive(true);
+            letters[index].sprite = letter.lettersSprites[index];
+        }
     }
 }
