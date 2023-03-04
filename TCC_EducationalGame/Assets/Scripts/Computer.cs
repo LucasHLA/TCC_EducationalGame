@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Computer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("Animation Related")]
+    private Animator anim;
+    private bool playerUsing;
+
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+        playerUsing = GameObject.FindObjectOfType<Player>().GetComponent<Player>().usingPC;
+
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        playerUsing = GameObject.FindObjectOfType<Player>().GetComponent<Player>().usingPC;
+
+        if (playerUsing)
+        {
+            anim.SetInteger("State", 1);
+            
+        }
+        else
+        {
+            anim.SetInteger("State", 0);
+        }
+
         
     }
 }

@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private enum State {Idle, Walk, Jump, Using};
     private State state = State.Idle;
     public bool canUse = false;
+    public bool usingPC = false;
 
     [Header("Jumping related")]
     [SerializeField] private LayerMask ground;
@@ -32,12 +33,19 @@ public class Player : MonoBehaviour
     {
         anim.SetInteger("State", (int)state);
         Jump();
+
         if (canUse)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                usingPC = true;
                 state = State.Using;
             }
+        }
+        else if(!canUse && state != State.Using)
+        {
+           
+            usingPC = false;
         }
         
     }
@@ -63,7 +71,7 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         
-        if(horizontal == 0 && rb.velocity.y == 0f)
+        if(horizontal == 0 && rb.velocity.y == 0f && !usingPC)
         {
             state = State.Idle;
         }
@@ -98,6 +106,14 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Computer"))
         {
             canUse = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Computer"))
+        {
+            canUse = false;
         }
     }
 }
