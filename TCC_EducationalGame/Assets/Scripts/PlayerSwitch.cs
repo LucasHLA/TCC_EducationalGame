@@ -8,10 +8,16 @@ public class PlayerSwitch : MonoBehaviour
     public Robot robot;
 
     public bool playerIsActive = true;
+    private Robot activeRobot;
+
+    private void Start()
+    {
+        activeRobot = GameObject.FindGameObjectWithTag("Robot").GetComponent<Robot>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (activeRobot.isActiveAndEnabled && Input.GetKeyDown(KeyCode.LeftShift))
         {
             SwitchPlayer();
         }

@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     [Header("State Machine")]
     private Animator anim;
     private enum State {Idle, Walk, Jump, Using};
-    private State state = State.Idle;
+    private State state = State.Using;
     public bool canUse = false;
     public bool usingPC = false;
 
@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
             {
                 usingPC = true;
                 state = State.Using;
+                GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
             }
         }
         else if(!canUse && state != State.Using)
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         
-        if(horizontal == 0 && rb.velocity.y == 0f && !usingPC)
+        if(horizontal == 0 && rb.velocity.y == 0f)
         {
             state = State.Idle;
         }

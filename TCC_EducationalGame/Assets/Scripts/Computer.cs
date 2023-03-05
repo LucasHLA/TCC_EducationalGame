@@ -7,11 +7,13 @@ public class Computer : MonoBehaviour
     [Header("Animation Related")]
     private Animator anim;
     private bool playerUsing;
+    private Animator playerAnim;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         playerUsing = GameObject.FindObjectOfType<Player>().GetComponent<Player>().usingPC;
+        playerAnim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
 
     }
 
@@ -23,7 +25,7 @@ public class Computer : MonoBehaviour
         if (playerUsing)
         {
             anim.SetInteger("State", 1);
-            
+            playerAnim.SetInteger("State", 3);
         }
         else
         {
