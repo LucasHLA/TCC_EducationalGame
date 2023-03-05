@@ -7,6 +7,7 @@ public class Robot : MonoBehaviour
     [Header("Basic Settings")]
     protected Rigidbody2D rb;
     [SerializeField] protected float speed;
+    protected BoxCollider2D box;
 
     [Header("State Machine")]
     private Animator anim;
@@ -15,10 +16,12 @@ public class Robot : MonoBehaviour
 
     [Header("Moviment related")]
     [SerializeField] protected bool usingSpecial;
+    
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        box = GetComponent<BoxCollider2D>();
     }
 
     protected virtual void Update()

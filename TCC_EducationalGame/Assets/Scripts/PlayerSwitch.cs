@@ -10,6 +10,8 @@ public class PlayerSwitch : MonoBehaviour
     public bool playerIsActive = true;
     private Robot activeRobot;
 
+
+
     private void Start()
     {
         activeRobot = GameObject.FindGameObjectWithTag("Robot").GetComponent<Robot>();
