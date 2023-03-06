@@ -11,6 +11,7 @@ TagManager:
   - R
   - Computer
   - Robot
+  - Brick
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,7 @@ public class Robot : MonoBehaviour
         anim.SetInteger("State", (int)state);
     }
 
-    public void BaseMoviment()
+    protected void RobotBaseMoviment()
     {
         float horizontal = Input.GetAxis("Horizontal");
 
