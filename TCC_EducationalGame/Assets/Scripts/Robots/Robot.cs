@@ -51,4 +51,16 @@ public class Robot : MonoBehaviour
             state = State.Idle;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        int letterLayer = LayerMask.NameToLayer("letter");
+
+        if (other.gameObject.layer == letterLayer)
+        {
+            GameController.instance.letterTag = other.gameObject.tag.ToString();
+            Destroy(other.gameObject);
+            GameController.instance.index++;
+        }
+    }
 }
