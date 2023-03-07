@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class TankerRobot : Robot
 {
+    [Header("Shooting Related")]
     private bool isShooting;
+
+    [Header("Bullet related")]
+    public GameObject bulletPrefab;
+    [SerializeField] private Transform firePoint;
 
     protected override void Update()
     {
         base.Update();
+        Shooting();
     }
 
     private void FixedUpdate()
@@ -46,12 +52,32 @@ public class TankerRobot : Robot
         }
     }
 
-    private void Shoot()
+    private void Shooting()
     {
         if (Input.GetButtonDown("Fire1") && !isShooting)
         {
             state = State.Special;
+            isShooting = true;
+            StartCoroutine(OnShooting());
+            StartCoroutine(AfterShooting());
         }
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+    }
+
+    IEnumerator OnShooting()
+    {
+        yield return new WaitForSeconds(.2f);
+        Shoot();
+    }
+
+    IEnumerator AfterShooting()
+    {
+        yield return new WaitForSeconds(.4f);
+        isShooting = false;
     }
 }
 
