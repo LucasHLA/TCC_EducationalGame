@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: bde10b04622c03440a4b09d9a1b90721
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 293977285362929021
+    second: Snack_machine_Bench_Trash_bin (16 x 16)_0
+  - first:
+      213: -3306410735283392225
+    second: Snack_machine_Bench_Trash_bin (16 x 16)_1
+  - first:
+      213: 1506968936391917866
+    second: Snack_machine_Bench_Trash_bin (16 x 16)_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -114,7 +123,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Snack_machine_Bench_Trash_bin (16 x 16)_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d471298ca641400800000000000000
+      internalID: 293977285362929021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snack_machine_Bench_Trash_bin (16 x 16)_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 16
+        width: 40
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1135e154f44d12d0800000000000000
+      internalID: -3306410735283392225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snack_machine_Bench_Trash_bin (16 x 16)_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 16
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21403d6344d9e410800000000000000
+      internalID: 1506968936391917866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
