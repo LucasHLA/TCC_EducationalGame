@@ -22,6 +22,7 @@ public class PlayerSwitch : MonoBehaviour
         if (activeRobot.isActiveAndEnabled && Input.GetKeyDown(KeyCode.LeftShift))
         {
             SwitchPlayer();
+            Debug.Log("Change");
         }
     }
 
