@@ -27,12 +27,8 @@ public class Button : MonoBehaviour
         if (other.gameObject.CompareTag("Robot") || other.gameObject.CompareTag("Player"))
         {
             anim.SetInteger("State", 0);
-            GameObject.FindGameObjectWithTag("Barrier").GetComponent<Animator>().SetInteger("State", 2);
-            int a = GameObject.FindGameObjectWithTag("Barrier").GetComponent<Animator>().GetInteger("State");
-            if (a == 2)
-            {
-                GameObject.FindGameObjectWithTag("Barrier").GetComponent<Animator>().SetInteger("State", 0);
-            }
+            GameObject.FindGameObjectWithTag("Barrier").GetComponent<Animator>().SetInteger("State", 0);
+            
         }
     }
 }

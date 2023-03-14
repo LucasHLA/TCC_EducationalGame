@@ -9,6 +9,9 @@ public class Computer : MonoBehaviour
     private bool playerUsing;
     private Animator playerAnim;
 
+    [Header("Indicators related")]
+    public GameObject e;
+
     void Start()
     {
         anim = GetComponent<Animator>();

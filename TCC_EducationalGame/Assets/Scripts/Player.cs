@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     {
         anim.SetInteger("State", (int)state);
         Jump();
-
+       
         if (canUse)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -107,7 +107,9 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Computer"))
         {
             canUse = true;
+            GameObject.FindObjectOfType<Computer>().GetComponent<Computer>().e.SetActive(true);
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -115,6 +117,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Computer"))
         {
             canUse = false;
+            GameObject.FindObjectOfType<Computer>().GetComponent<Computer>().e.SetActive(false);
         }
     }
 }
