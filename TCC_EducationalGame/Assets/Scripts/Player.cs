@@ -99,9 +99,9 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.layer == letterLayer)
         {
-            GameController.instance.letterTag = other.gameObject.tag.ToString();
+            LetterController.instance.letterTag = other.gameObject.tag.ToString();
             Destroy(other.gameObject);
-            GameController.instance.index++;
+            LetterController.instance.index++;
         }
 
         if (other.gameObject.CompareTag("Computer"))

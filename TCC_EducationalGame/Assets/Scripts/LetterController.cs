@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class LetterController : MonoBehaviour
 {
-    public static GameController instance;
+    public static LetterController instance;
 
     [Header("Letters Controller")]
     public GameObject[] lettersController;

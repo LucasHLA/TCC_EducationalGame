@@ -362,7 +362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -207.3, y: 194.5}
+  m_AnchoredPosition: {x: -207.3, y: 152}
   m_SizeDelta: {x: 226.0927, y: 31.9099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4748727122042085008
@@ -377,17 +377,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c186e7a302b2bec4ebc3d466a23bd3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letter: {fileID: 11400000, guid: 3af9e580aec92124cbf544a207e0d25f, type: 2}
+  letter: {fileID: 0}
   letters:
-  - {fileID: 4748727121798371264}
-  - {fileID: 4748727122256540979}
-  - {fileID: 4748727121547426758}
-  - {fileID: 4748727120828171561}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   lettersInOrder:
-  - {fileID: 4748727121798371270}
-  - {fileID: 4748727122256540977}
-  - {fileID: 4748727121547426756}
-  - {fileID: 4748727120828171567}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   index: -1
 --- !u!1 &4748727122256540977
 GameObject:
