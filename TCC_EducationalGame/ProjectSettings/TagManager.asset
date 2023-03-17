@@ -13,6 +13,7 @@ TagManager:
   - Robot
   - Brick
   - Barrier
+  - Clear
   layers:
   - Default
   - TransparentFX
