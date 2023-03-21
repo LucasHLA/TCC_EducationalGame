@@ -64,6 +64,9 @@ TagManager:
   - name: Foreground
     uniqueID: 988247779
     locked: 0
+  - name: Platforms
+    uniqueID: 4251009183
+    locked: 0
   - name: Letters
     uniqueID: 3892842441
     locked: 0

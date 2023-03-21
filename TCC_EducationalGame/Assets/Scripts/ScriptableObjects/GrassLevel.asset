@@ -15,5 +15,5 @@ MonoBehaviour:
   lettersSprites:
   - {fileID: 21300000, guid: eee2c2a7588ee6e48974854a28580e57, type: 3}
   - {fileID: 21300000, guid: 87bacb21b27ea604dabcaaa15645a9a1, type: 3}
-  - {fileID: 21300000, guid: c3cc4262fd714814db4b4ad5b7720e90, type: 3}
+  - {fileID: 21300000, guid: dc7f72ec6f45a9e408ed456fc93ffe34, type: 3}
   - {fileID: 21300000, guid: 5ec9176c73ce1d647ae5947609b87110, type: 3}

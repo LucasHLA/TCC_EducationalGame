@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7425106174006942160
+--- !u!1 &3996680889195912101
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7425106174006942166}
-  - component: {fileID: 7425106174006942161}
+  - component: {fileID: 3996680889195912099}
+  - component: {fileID: 3996680889195912098}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: LevelSelector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7425106174006942166
+--- !u!4 &3996680889195912099
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425106174006942160}
+  m_GameObject: {fileID: 3996680889195912101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8507185, y: 0.7301213, z: -0.6757533}
+  m_LocalPosition: {x: -1.887225, y: 0.05665967, z: -0.472726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7425106174006942161
+--- !u!114 &3996680889195912098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7425106174006942160}
+  m_GameObject: {fileID: 3996680889195912101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28900ef929d65b745b1c8114b5c1777a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8d123801af9ff40b7452db803fcd2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lettersController:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  index: -1
-  letterTag: 
+  spring: 0
+  summer: 0
+  autumn: 0
+  winter: 0

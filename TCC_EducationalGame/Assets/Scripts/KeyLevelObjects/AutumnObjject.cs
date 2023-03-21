@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class BeachObject : MonoBehaviour
+public class AutumnObjject : MonoBehaviour
 {
     public SpriteRenderer LevelLight;
     public Light2D light;
     void Update()
     {
-        if (GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().summer == true)
+
+        if (GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().autumn == true)
         {
             LevelLight.color = Color.green;
             light.color = Color.green;
@@ -21,5 +22,6 @@ public class BeachObject : MonoBehaviour
             light.color = Color.red;
             GetComponent<SpriteRenderer>().color = Color.black;
         }
+
     }
 }
