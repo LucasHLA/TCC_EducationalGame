@@ -26,7 +26,7 @@ public class LevelSelector : MonoBehaviour
     {
         if (!spring && !summer && !autumn && !winter)
         {
-            GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "Lab";
+            GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "Primavera";
         }
         else if(spring && !summer && !autumn && !winter)
         {

@@ -7,6 +7,7 @@ public class SceneController : MonoBehaviour
 {
     public string sceneName;
     public GameObject levelName;
+    public float transitionTime;
     //Make the transition longer and actually create a transition before hte scenes with a nice little music or something that feels nice
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -20,7 +21,7 @@ public class SceneController : MonoBehaviour
     IEnumerator ClearTransition()
     {
         GameObject.FindGameObjectWithTag("Transition").GetComponent<Animator>().SetTrigger("end");
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadSceneAsync(sceneName);
         
     }
