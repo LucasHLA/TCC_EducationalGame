@@ -102,6 +102,7 @@ public class Player : MonoBehaviour
             LetterController.instance.letterTag = other.gameObject.tag.ToString();
             Destroy(other.gameObject);
             LetterController.instance.index++;
+            LetterController.instance.countLetters++;
         }
 
         if (other.gameObject.CompareTag("Computer"))

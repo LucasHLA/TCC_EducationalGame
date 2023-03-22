@@ -1,0 +1,2389 @@
+fileFormatVersion: 2
+guid: 3782bbecfa9afcb40b94952363845275
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8730258187579685530
+    second: LN9BN+_0
+  - first:
+      213: -1856686663794666469
+    second: LN9BN+_1
+  - first:
+      213: -7436772123511491451
+    second: LN9BN+_2
+  - first:
+      213: 8534475897559989416
+    second: LN9BN+_3
+  - first:
+      213: -7716270614680362042
+    second: LN9BN+_4
+  - first:
+      213: -6985231401358470197
+    second: LN9BN+_5
+  - first:
+      213: -2427338327396158749
+    second: LN9BN+_6
+  - first:
+      213: -2238195011414684257
+    second: LN9BN+_13
+  - first:
+      213: -3398973629855896688
+    second: LN9BN+_14
+  - first:
+      213: 3213511770872765654
+    second: LN9BN+_15
+  - first:
+      213: 7051946635138637046
+    second: LN9BN+_16
+  - first:
+      213: -2343221350608913364
+    second: LN9BN+_17
+  - first:
+      213: 243922151535367952
+    second: LN9BN+_18
+  - first:
+      213: -5942527096166304664
+    second: LN9BN+_19
+  - first:
+      213: -7033294703265691478
+    second: LN9BN+_20
+  - first:
+      213: -8132599688139015199
+    second: LN9BN+_21
+  - first:
+      213: 943411753827837981
+    second: LN9BN+_22
+  - first:
+      213: -4521314602154713189
+    second: LN9BN+_23
+  - first:
+      213: -3608508199892856357
+    second: LN9BN+_24
+  - first:
+      213: 3828889777270120473
+    second: LN9BN+_25
+  - first:
+      213: -5949983714165960949
+    second: LN9BN+_26
+  - first:
+      213: 5712993343494364846
+    second: LN9BN+_27
+  - first:
+      213: -7585457405037228969
+    second: LN9BN+_28
+  - first:
+      213: -6067193112456573940
+    second: LN9BN+_29
+  - first:
+      213: 5492519862056641379
+    second: LN9BN+_32
+  - first:
+      213: -805960019299744037
+    second: LN9BN+_35
+  - first:
+      213: -6844148779529403707
+    second: LN9BN+_36
+  - first:
+      213: 7762262267946252100
+    second: LN9BN+_37
+  - first:
+      213: -4976362387470482885
+    second: LN9BN+_38
+  - first:
+      213: 9114198167373260694
+    second: LN9BN+_39
+  - first:
+      213: -7286068989083045975
+    second: LN9BN+_40
+  - first:
+      213: -2725924122358393661
+    second: LN9BN+_41
+  - first:
+      213: -1492443149694604438
+    second: LN9BN+_43
+  - first:
+      213: 6814967245968872817
+    second: LN9BN+_44
+  - first:
+      213: 4619604302610063623
+    second: LN9BN+_45
+  - first:
+      213: 2782300442463673751
+    second: LN9BN+_46
+  - first:
+      213: 6767949498204613095
+    second: LN9BN+_47
+  - first:
+      213: -710131858160510109
+    second: LN9BN+_48
+  - first:
+      213: 5885141295352066332
+    second: LN9BN+_49
+  - first:
+      213: 9051365883980933309
+    second: LN9BN+_52
+  - first:
+      213: -1232367296488151286
+    second: LN9BN+_55
+  - first:
+      213: -6422717617937088358
+    second: LN9BN+_56
+  - first:
+      213: 5493796477453463032
+    second: LN9BN+_57
+  - first:
+      213: 164549742637121074
+    second: LN9BN+_58
+  - first:
+      213: 3945534997320450937
+    second: LN9BN+_59
+  - first:
+      213: -491576318290477796
+    second: LN9BN+_60
+  - first:
+      213: 334830657116221798
+    second: LN9BN+_61
+  - first:
+      213: 3732877300401357816
+    second: LN9BN+_63
+  - first:
+      213: 5495281890973338488
+    second: LN9BN+_64
+  - first:
+      213: -1846727935219015729
+    second: LN9BN+_65
+  - first:
+      213: -5178509289558551392
+    second: LN9BN+_66
+  - first:
+      213: 918343216391005670
+    second: LN9BN+_67
+  - first:
+      213: 4080793881571890360
+    second: LN9BN+_68
+  - first:
+      213: 2223621324350371934
+    second: LN9BN+_69
+  - first:
+      213: 2721270192964540100
+    second: LN9BN+_72
+  - first:
+      213: -5535838021481359702
+    second: LN9BN+_75
+  - first:
+      213: -3100734737413507142
+    second: LN9BN+_76
+  - first:
+      213: 4790607090465826340
+    second: LN9BN+_77
+  - first:
+      213: -3473117674905965588
+    second: LN9BN+_78
+  - first:
+      213: 4671167286910826074
+    second: LN9BN+_79
+  - first:
+      213: -1892424912613033164
+    second: LN9BN+_80
+  - first:
+      213: -4119739094095733636
+    second: LN9BN+_81
+  - first:
+      213: -4285045073860339421
+    second: LN9BN+_83
+  - first:
+      213: -3333233551286393945
+    second: LN9BN+_84
+  - first:
+      213: 865363637306071389
+    second: LN9BN+_85
+  - first:
+      213: 88671665557487403
+    second: LN9BN+_86
+  - first:
+      213: 6069806703080404321
+    second: LN9BN+_87
+  - first:
+      213: -3064639721053829876
+    second: LN9BN+_88
+  - first:
+      213: 6951435519016041182
+    second: LN9BN+_89
+  - first:
+      213: 5518788248708847868
+    second: LN9BN+_90
+  - first:
+      213: -6625806220761519809
+    second: LN9BN+_91
+  - first:
+      213: 3663359016195501274
+    second: LN9BN+_92
+  - first:
+      213: 3965913210051706538
+    second: LN9BN+_93
+  - first:
+      213: -1731078358645480039
+    second: LN9BN+_94
+  - first:
+      213: 5736357556140978632
+    second: LN9BN+_50
+  - first:
+      213: 5788146840878356196
+    second: LN9BN+_51
+  - first:
+      213: 634737676870389051
+    second: LN9BN+_53
+  - first:
+      213: -9070711223035099327
+    second: LN9BN+_54
+  - first:
+      213: 2220940507476183250
+    second: LN9BN+_62
+  - first:
+      213: 8957124282071277250
+    second: LN9BN+_30
+  - first:
+      213: 1607419543402522128
+    second: LN9BN+_31
+  - first:
+      213: -385319995520949225
+    second: LN9BN+_33
+  - first:
+      213: 51630383064076998
+    second: LN9BN+_34
+  - first:
+      213: 6508445163868630952
+    second: LN9BN+_42
+  - first:
+      213: 5457636395346418879
+    second: LN9BN+_7
+  - first:
+      213: 9045070539722860075
+    second: LN9BN+_8
+  - first:
+      213: 5932396977667453765
+    second: LN9BN+_9
+  - first:
+      213: 1042892902435705964
+    second: LN9BN+_10
+  - first:
+      213: 6721615060492105529
+    second: LN9BN+_11
+  - first:
+      213: 884199221677167437
+    second: LN9BN+_12
+  - first:
+      213: 6218587314719406500
+    second: LN9BN+_70
+  - first:
+      213: -2517879058848452445
+    second: LN9BN+_71
+  - first:
+      213: -1909087852689115550
+    second: LN9BN+_73
+  - first:
+      213: -5725100095793192823
+    second: LN9BN+_74
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LN9BN+_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 752
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9af124119b182970800000000000000
+      internalID: 8730258187579685530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1450510159bb36e0800000000000000
+      internalID: -1856686663794666469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584f196c7274bc890800000000000000
+      internalID: -7436772123511491451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac323a7c9c807670800000000000000
+      internalID: 8534475897559989416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3213d22cc4ae490800000000000000
+      internalID: -7716270614680362042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3df10cc097f0f90800000000000000
+      internalID: -6985231401358470197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 752
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e27cddd6ac505ed0800000000000000
+      internalID: -2427338327396158749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_13
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d839ede7550f0e0800000000000000
+      internalID: -2238195011414684257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_14
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09be48ffd7b64d0d0800000000000000
+      internalID: -3398973629855896688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_15
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc58600eefa89c20800000000000000
+      internalID: 3213511770872765654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_16
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 781
+        width: 78
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc13721a1c8dd160800000000000000
+      internalID: 7051946635138637046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 765
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c38d6b8943b7fd0800000000000000
+      internalID: -2343221350608913364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_18
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 749
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0175d1b87e5926300800000000000000
+      internalID: 243922151535367952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_19
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 749
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864bfd44717e78da0800000000000000
+      internalID: -5942527096166304664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_20
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 749
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8463b3bb7b46e90800000000000000
+      internalID: -7033294703265691478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_21
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 741
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb75080ca3332f80800000000000000
+      internalID: -8132599688139015199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 704
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1826dfddfba71d00800000000000000
+      internalID: 943411753827837981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_23
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f18c403501141c0800000000000000
+      internalID: -4521314602154713189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd15d4039e00cedc0800000000000000
+      internalID: -3608508199892856357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9106f4257f2f22530800000000000000
+      internalID: 3828889777270120473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_26
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f47c916596d6da0800000000000000
+      internalID: -5949983714165960949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_27
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae172b5d21a84f40800000000000000
+      internalID: 5712993343494364846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_28
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 704
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c46e9fdaa0bb690800000000000000
+      internalID: -7585457405037228969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_29
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 725
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c445472000dcba0800000000000000
+      internalID: -6067193112456573940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_32
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 704
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363e9a3c6b9593c40800000000000000
+      internalID: 5492519862056641379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 656
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6c872f1a7a0d4f0800000000000000
+      internalID: -805960019299744037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_36
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c20a3662f2b401a0800000000000000
+      internalID: -6844148779529403707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447ba5e086819bb60800000000000000
+      internalID: 7762262267946252100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_38
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32053546c860fab0800000000000000
+      internalID: -4976362387470482885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_39
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697acc2b1f22c7e70800000000000000
+      internalID: 9114198167373260694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_40
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af27b09bdea2ea90800000000000000
+      internalID: -7286068989083045975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_41
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 656
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d82a04729b2ad0800000000000000
+      internalID: -2725924122358393661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_43
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 608
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6becf6dcd6c94be0800000000000000
+      internalID: -1492443149694604438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_44
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17595eb5a90a39e50800000000000000
+      internalID: 6814967245968872817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_45
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70160f333a12c1040800000000000000
+      internalID: 4619604302610063623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_46
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d957bd287bc9620800000000000000
+      internalID: 2782300442463673751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_47
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9e442e5369ced50800000000000000
+      internalID: 6767949498204613095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_48
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b97a266da1526f0800000000000000
+      internalID: -710131858160510109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_49
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 608
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11317ac3d83ca150800000000000000
+      internalID: 5885141295352066332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_52
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 608
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8e5c6b059ec9d70800000000000000
+      internalID: 9051365883980933309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_55
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 560
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07e3042970c5eee0800000000000000
+      internalID: -1232367296488151286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_56
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9087320b5cedd6a0800000000000000
+      internalID: -6422717617937088358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_57
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fde7e2f9c2ed3c40800000000000000
+      internalID: 5493796477453463032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_58
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e74cd7e19984200800000000000000
+      internalID: 164549742637121074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_59
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973482cfc2b51c630800000000000000
+      internalID: 3945534997320450937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_60
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d3d4861f19d29f0800000000000000
+      internalID: -491576318290477796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_61
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 560
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661b25965be85a400800000000000000
+      internalID: 334830657116221798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_63
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 512
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3ca888028ddc330800000000000000
+      internalID: 3732877300401357816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_64
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b4a1cb3c9234c40800000000000000
+      internalID: 5495281890973338488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_65
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfda703aba1f56e0800000000000000
+      internalID: -1846727935219015729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_66
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a45dc1fc3d3228b0800000000000000
+      internalID: -5178509289558551392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_67
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e520ea2a4c9ebc00800000000000000
+      internalID: 918343216391005670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_68
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b41ea01a64e1a830800000000000000
+      internalID: 4080793881571890360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_69
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 512
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5833e030d3ebde10800000000000000
+      internalID: 2223621324350371934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_72
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 512
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6928592d4e3c520800000000000000
+      internalID: 2721270192964540100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_75
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 464
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6908b46a0cc23b0800000000000000
+      internalID: -5535838021481359702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_76
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7f0c94f2af7f4d0800000000000000
+      internalID: -3100734737413507142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_77
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426eead54c7ab7240800000000000000
+      internalID: 4790607090465826340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_78
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb691440e10dcfc0800000000000000
+      internalID: -3473117674905965588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_79
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56beb606e153d040800000000000000
+      internalID: 4671167286910826074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_80
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bb9978191ccb5e0800000000000000
+      internalID: -1892424912613033164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_81
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 464
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c52290f1fb3d6c0800000000000000
+      internalID: -4119739094095733636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_83
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 416
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329540e55367884c0800000000000000
+      internalID: -4285045073860339421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_84
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3292eceb9fdb1d0800000000000000
+      internalID: -3333233551286393945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_85
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d591b2ba4a3620c00800000000000000
+      internalID: 865363637306071389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_86
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f3237f8660b3100800000000000000
+      internalID: 88671665557487403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_87
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165746889094c3450800000000000000
+      internalID: 6069806703080404321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_88
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05c80e29663875d0800000000000000
+      internalID: -3064639721053829876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_89
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 416
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edafbf536c5787060800000000000000
+      internalID: 6951435519016041182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_90
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf814e22caca69c40800000000000000
+      internalID: 5518788248708847868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_91
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 416
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39afe4e8586c04a0800000000000000
+      internalID: -6625806220761519809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_92
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 416
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcae0dad9dd6d230800000000000000
+      internalID: 3663359016195501274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_93
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 416
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae392f5d01c90730800000000000000
+      internalID: 3965913210051706538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_94
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 416
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995e19a8769f9f7e0800000000000000
+      internalID: -1731078358645480039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 608
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c139660ec2ab9f40800000000000000
+      internalID: 5736357556140978632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_51
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 608
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e69a5682e0a35050800000000000000
+      internalID: 5788146840878356196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_53
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 608
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d8a6bdd8a0fc800800000000000000
+      internalID: 634737676870389051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_54
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 608
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14708da833c5e1280800000000000000
+      internalID: -9070711223035099327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_62
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 608
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8c46fdf9d52de10800000000000000
+      internalID: 2220940507476183250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_30
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 704
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce52e1e3191e4c70800000000000000
+      internalID: 8957124282071277250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 704
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0162789ee83be4610800000000000000
+      internalID: 1607419543402522128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_33
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 704
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7146e1e618117aaf0800000000000000
+      internalID: -385319995520949225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_34
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 704
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2d6225f8d67b000800000000000000
+      internalID: 51630383064076998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_42
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 704
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afaf70b464a25a50800000000000000
+      internalID: 6508445163868630952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcddd1c26b6dbb40800000000000000
+      internalID: 5457636395346418879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 512
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b262888abbb868d70800000000000000
+      internalID: 9045070539722860075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_9
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 512
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5433878be9b145250800000000000000
+      internalID: 5932396977667453765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 512
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64d47cb199197e00800000000000000
+      internalID: 1042892902435705964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_11
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 512
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9373c8de849f74d50800000000000000
+      internalID: 6721615060492105529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_12
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d439eb6e18e454c00800000000000000
+      internalID: 884199221677167437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_70
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9b99a173cdc4650800000000000000
+      internalID: 6218587314719406500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_71
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 781
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a071f51652be0dd0800000000000000
+      internalID: -2517879058848452445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_73
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 757
+        width: 74
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266b37776be8185e0800000000000000
+      internalID: -1909087852689115550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LN9BN+_74
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 765
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98021b6bbcb5c80b0800000000000000
+      internalID: -5725100095793192823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

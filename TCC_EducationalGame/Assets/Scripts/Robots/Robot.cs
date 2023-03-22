@@ -61,6 +61,7 @@ public class Robot : MonoBehaviour
             LetterController.instance.letterTag = other.gameObject.tag.ToString();
             Destroy(other.gameObject);
             LetterController.instance.index++;
+            LetterController.instance.countLetters++;
         }
     }
 }

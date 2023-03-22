@@ -15,6 +15,7 @@ TagManager:
   - Barrier
   - Transition
   - Teleport
+  - Flower
   layers:
   - Default
   - TransparentFX
