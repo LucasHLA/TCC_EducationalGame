@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 48e50a2a11663634490bd1966665fc44
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5064687311449082614
+    second: House (112 x 96)_0
+  - first:
+      213: -7046065298132919071
+    second: House (112 x 96)_1
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -114,7 +120,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: House (112 x 96)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0536ae59bd96b9b0800000000000000
+      internalID: -5064687311449082614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House (112 x 96)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec949861f8573e90800000000000000
+      internalID: -7046065298132919071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -111,6 +111,12 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<Computer>().GetComponent<Computer>().e.SetActive(true);
         }
 
+        if (other.gameObject.CompareTag("Flower"))
+        {
+            Destroy(other.gameObject);
+            GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().spring = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
