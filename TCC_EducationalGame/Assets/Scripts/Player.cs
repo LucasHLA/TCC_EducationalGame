@@ -7,8 +7,9 @@ public class Player : MonoBehaviour
     [Header("Basic Settings")]
     private Rigidbody2D rb;
     private Collider2D col;
-    [SerializeField] private int health;
+    public int health;
     [SerializeField] private float speed;
+    private SpriteRenderer sr;
 
     [Header("State Machine")]
     private Animator anim;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     private State state = State.Using;
     public bool canUse = false;
     public bool usingPC = false;
+    public float flashingTime;
 
     [Header("Jumping related")]
     [SerializeField] private LayerMask ground;
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,13 +51,11 @@ public class Player : MonoBehaviour
            
             usingPC = false;
         }
-        
     }
     private void FixedUpdate()
     {
         BaseMovement();
     }
-
     private void BaseMovement()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -77,6 +78,13 @@ public class Player : MonoBehaviour
             state = State.Idle;
         }
     }
+
+    public void Flash()
+    {
+        sr.enabled = true;
+        sr.enabled = false;
+    }
+
 
     private void Jump()
     {
@@ -128,3 +136,4 @@ public class Player : MonoBehaviour
         }
     }
 }
+

@@ -12,6 +12,7 @@ public class SceneLevel : SceneController
         if (other.gameObject.CompareTag("Player") && 
             GameObject.FindObjectOfType<LetterController>().GetComponent<LetterController>().canTeleport == true)
         {
+            GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().canvas.SetActive(false);
             StartCoroutine(ClearTransition());
         }
     }
@@ -20,7 +21,7 @@ public class SceneLevel : SceneController
     {
         GameObject.FindGameObjectWithTag("Transition").GetComponent<Animator>().SetTrigger("end");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadSceneAsync(sceneName);
+        SceneManager.LoadScene(sceneName);
 
     }
 }
