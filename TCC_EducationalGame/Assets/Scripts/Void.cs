@@ -20,12 +20,12 @@ public class Void : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health--;
                 StartCoroutine(PlayerRespawning());
-                
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().TakeDamage();
             }
 
             if(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health < 0)
             {
-                //Here comes the "Game Over"
+                GameObject.FindObjectOfType<SceneLevel>().GetComponent<SceneLevel>().RestartLevel();
             }
         }
     }

@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     public int health;
     [SerializeField] private float speed;
     private SpriteRenderer sr;
+    public float flashDuration = 0.2f;
+    public float flashRate = 0.1f;
+    private bool isFlashing = false;
 
     [Header("State Machine")]
     private Animator anim;
@@ -17,7 +20,6 @@ public class Player : MonoBehaviour
     private State state = State.Using;
     public bool canUse = false;
     public bool usingPC = false;
-    public float flashingTime;
 
     [Header("Jumping related")]
     [SerializeField] private LayerMask ground;
@@ -79,13 +81,27 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void Flash()
+    public void TakeDamage()
     {
-        sr.enabled = true;
-        sr.enabled = false;
+        if (!isFlashing)
+        {
+            isFlashing = true;
+            InvokeRepeating("FlashCharacter", 0f, flashRate);
+            Invoke("StopFlashing", flashDuration);
+        }
     }
 
+    private void FlashCharacter()
+    {
+        sr.enabled = !sr.enabled;
+    }
 
+    private void StopFlashing()
+    {
+        isFlashing = false;
+        sr.enabled = true;
+        CancelInvoke("FlashCharacter");
+    }
     private void Jump()
     {
         if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground))
