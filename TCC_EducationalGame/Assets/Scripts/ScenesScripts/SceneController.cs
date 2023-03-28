@@ -7,5 +7,10 @@ public class SceneController : MonoBehaviour
 {
     public string sceneName;
     public float transitionTime;
- 
+
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }

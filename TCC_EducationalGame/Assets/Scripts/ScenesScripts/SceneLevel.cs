@@ -24,9 +24,4 @@ public class SceneLevel : SceneController
         SceneManager.LoadScene(sceneName);
 
     }
-    //Call this method when the player lose all the tries
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
 }

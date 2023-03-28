@@ -15,7 +15,8 @@ public class GameController : MonoBehaviour
     [Header("Player related UI")]
     public TextMeshProUGUI tries;
 
-
+    [Header("GameOver Panel")]
+    public GameObject gameOverPanel;
 
 
     void Start()
@@ -35,5 +36,10 @@ public class GameController : MonoBehaviour
         canvas.SetActive(true);
         levelIndicator.SetActive(true);
 
+    }
+
+    public void ShowGameOver()
+    {
+        gameOverPanel.SetActive(true);
     }
 }

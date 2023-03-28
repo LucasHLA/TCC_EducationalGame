@@ -25,7 +25,7 @@ public class Void : MonoBehaviour
 
             if(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health < 0)
             {
-                GameObject.FindObjectOfType<SceneLevel>().GetComponent<SceneLevel>().RestartLevel();
+                GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().ShowGameOver();
             }
         }
     }
