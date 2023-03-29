@@ -53,11 +53,11 @@ public class RedRobot : Robot
 
     void Crouch()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S) && !usingSpecial)
+        if(Input.GetKeyDown(KeyCode.DownArrow) && !usingSpecial)
         {
             usingSpecial = true;
         }
-        else if(Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.S) && usingSpecial)
+        else if(Input.GetKeyUp(KeyCode.UpArrow) && usingSpecial)
         {
             usingSpecial = false;
         }
