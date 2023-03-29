@@ -17,6 +17,10 @@ TagManager:
   - Teleport
   - Flower
   - Canvas
+  - S
+  - V
+  - E
+  - T
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872491ec31b7fcf4db84b224b00326c6, type: 3}
+  m_Name: BeachLevel
+  m_EditorClassIdentifier: 
+  lettersSprites:
+  - {fileID: 21300000, guid: ae9db4db4ccddb646a9ab244096eb248, type: 3}
+  - {fileID: 21300000, guid: 33087c8fbe4ae5940b66a13345fa464c, type: 3}
+  - {fileID: 21300000, guid: ab2528be53aa6294fa86c3c92d1b2035, type: 3}
+  - {fileID: 21300000, guid: 9bce239f9c735e14d97a303913af1d84, type: 3}
+  - {fileID: 21300000, guid: d30e7701fd3dd5c408b8161a968df9e7, type: 3}
+  - {fileID: 21300000, guid: c641d3cc2daf58b4480143c47f648c94, type: 3}
+  - {fileID: 21300000, guid: d30e7701fd3dd5c408b8161a968df9e7, type: 3}

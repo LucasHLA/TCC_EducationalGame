@@ -5,6 +5,7 @@ using UnityEngine;
 public class LetterController : MonoBehaviour
 {
     public static LetterController instance;
+    public Letter letter;
 
     [Header("Letters Controller")]
     public GameObject[] lettersController;
@@ -27,6 +28,7 @@ public class LetterController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(letter.name);
         lUI.index = index;
         CheckingLetters();
         if(countLetters >= totalLetters)
