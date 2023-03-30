@@ -20124,6 +20124,10 @@ PrefabInstance:
       value: LetterController
       objectReference: {fileID: 0}
     - target: {fileID: 7425106174006942161, guid: e1be1b2e30049d44daca2aee9e9a3f4c, type: 3}
+      propertyPath: letter
+      value: 
+      objectReference: {fileID: 11400000, guid: 3af9e580aec92124cbf544a207e0d25f, type: 2}
+    - target: {fileID: 7425106174006942161, guid: e1be1b2e30049d44daca2aee9e9a3f4c, type: 3}
       propertyPath: letterLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}

@@ -28,7 +28,6 @@ public class LetterController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(letter.name);
         lUI.index = index;
         CheckingLetters();
         if(countLetters >= totalLetters)
@@ -43,24 +42,38 @@ public class LetterController : MonoBehaviour
 
     private void CheckingLetters()
     {
-        switch (letterTag)
+
+        if(letter.name.ToString() == "GrassLevel")
         {
-            case "F":
-                lUI.index = 0;
-                break;
+            switch (letterTag)
+            {
+                case "F":
+                    lUI.index = 0;
+                    break;
 
-            case "L":
-                lUI.index = 1;
-                break;
+                case "L":
+                    lUI.index = 1;
+                    break;
 
-            case "O":
-                lUI.index = 2;
-                break;
+                case "O":
+                    lUI.index = 2;
+                    break;
 
-            case "R":
-                lUI.index = 3;
-                break;
+                case "R":
+                    lUI.index = 3;
+                    break;
+            }
         }
+        else if(letter.name.ToString() == "BeachLevel")
+        {
+            switch (letterTag)
+            {
+                case "S":
+                    lUI.index = 0;
+                    break;
+            }
+        }
+        
     }
 
     private int CountObjectsOnLayer()
