@@ -61,9 +61,11 @@ public class CapRobot : Robot
 
             if (hit != null)
             {
+
                 if (hit.CompareTag("Brick"))
                 {
-                    Destroy(hit.gameObject,0.2f);
+                    hit.gameObject.GetComponent<Animator>().SetTrigger("Destroy");
+                    Destroy(hit.gameObject,0.4f);
                 }
 
                 /*If we want to make this robot to kill enemies we need to make another "if" 

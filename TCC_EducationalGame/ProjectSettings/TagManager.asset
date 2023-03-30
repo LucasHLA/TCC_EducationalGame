@@ -21,6 +21,7 @@ TagManager:
   - V
   - E
   - T
+  - E+
   layers:
   - Default
   - TransparentFX
