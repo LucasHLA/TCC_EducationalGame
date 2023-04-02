@@ -2598,33 +2598,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345795, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: speed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345795, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: health
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345795, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: flashRate
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345795, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: jumpForce
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345795, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: flashDuration
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 427559018498345796, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 427559018498345799, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
