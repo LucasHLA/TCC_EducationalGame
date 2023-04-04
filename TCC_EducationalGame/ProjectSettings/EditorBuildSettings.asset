@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Primavera.unity
     guid: 843d2b66f99f00e4684a9cc1c6c41ca9
+  - enabled: 1
+    path: Assets/Scenes/Verao.unity
+    guid: df69acea70058024d81f2b79f0784b1e
   m_configObjects: {}

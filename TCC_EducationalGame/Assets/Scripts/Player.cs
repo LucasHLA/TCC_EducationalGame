@@ -141,6 +141,12 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().spring = true;
         }
 
+        if (other.gameObject.CompareTag("IceCream"))
+        {
+            Destroy(other.gameObject);
+            GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().summer = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)

@@ -3268,6 +3268,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4748727122042085015, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -202
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748727122042085015, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 194
+      objectReference: {fileID: 0}
     - target: {fileID: 8667601344287546899, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -20392,7 +20400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416786120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.4, y: 0.2, z: -10}
+  m_LocalPosition: {x: -20.45, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20411,8 +20419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  xMin: -19.2
-  xMax: 262.6
+  xMin: -20.45
+  xMax: 265.46
   yMin: -0.01
   yMax: 15.12
   bound: 1
