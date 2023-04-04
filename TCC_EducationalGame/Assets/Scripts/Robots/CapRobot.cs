@@ -52,11 +52,11 @@ public class CapRobot : Robot
     }
     void Attack()
     {
-        if (Input.GetButtonDown("Fire1") && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.P) && !isAttacking)
         {
             isAttacking = true;
             state = State.Special;
-
+            
             Collider2D hit = Physics2D.OverlapCircle(attackingPoint.position, radius);
 
             if (hit != null)
