@@ -10,7 +10,6 @@ public class Crab : MonoBehaviour
     [SerializeField] private float maxVision;
     [SerializeField] private float stopDistance;
     [SerializeField] private float speed;
-    [SerializeField] private float pushForce;
     private Rigidbody2D rb;
     private Animator anim;
     void Start()
@@ -24,6 +23,10 @@ public class Crab : MonoBehaviour
         GetPlayer();
     }
 
+    private void Update()
+    {
+
+    }
     void GetPlayer()
     {
         RaycastHit2D hit = Physics2D.Raycast(visionPoint.position,Vector2.left,maxVision);
@@ -35,18 +38,13 @@ public class Crab : MonoBehaviour
                 transform.eulerAngles = new Vector2(0, 0);
                 rb.velocity = new Vector2(-speed, rb.velocity.y);
                 float distance = Vector2.Distance(transform.position, hit.transform.position);
-
+                Debug.Log(distance);
                 if (distance <= stopDistance)
                 {
-                    speed = 0;
-                    anim.SetTrigger("atk");
-                    Rigidbody2D playerRigidbody = hit.transform.GetComponent<Rigidbody2D>();
-                    playerRigidbody.AddForce(Vector2.left * pushForce, ForceMode2D.Impulse);
-                    
+                    anim.SetBool("atk", true);
                 }
             }
         }
-
     }
 
     private void OnDrawGizmos()

@@ -16,6 +16,7 @@ public class Robot : MonoBehaviour
 
     [Header("Moviment related")]
     [SerializeField] protected bool usingSpecial;
+    [SerializeField] private float pushForce;
     
     void Start()
     {
@@ -62,6 +63,10 @@ public class Robot : MonoBehaviour
             Destroy(other.gameObject);
             LetterController.instance.index++;
             LetterController.instance.countLetters++;
+        }
+
+        if (other.gameObject.CompareTag("Crab"))
+        {
         }
     }
 }
