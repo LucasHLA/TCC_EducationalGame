@@ -8,8 +8,7 @@ public class CapRobot : Robot
     private bool isAttacking;
     [SerializeField] private Transform attackingPoint;
     [SerializeField] private float radius;
-    public float pushForce;
-    public bool push;
+
     protected override void Update()
     {
         base.Update();
@@ -68,6 +67,10 @@ public class CapRobot : Robot
                     Destroy(hit.gameObject,0.4f);
                 }
                 if (hit.CompareTag("Crab"))
+                {
+                    Destroy(hit.gameObject, 0.4f);
+                }
+                if (hit.CompareTag("Claw"))
                 {
                     Destroy(hit.gameObject, 0.4f);
                 }

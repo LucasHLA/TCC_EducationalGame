@@ -25,7 +25,7 @@ public class Crab : MonoBehaviour
 
     private void Update()
     {
-
+        AfterLosing();
     }
     void GetPlayer()
     {
@@ -36,14 +36,25 @@ public class Crab : MonoBehaviour
             if (hit.transform.CompareTag("Robot"))
             {
                 transform.eulerAngles = new Vector2(0, 0);
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
                 float distance = Vector2.Distance(transform.position, hit.transform.position);
                 Debug.Log(distance);
                 if (distance <= stopDistance)
                 {
-                    anim.SetBool("atk", true);
+                    anim.SetBool("isPushing",true);
+                }
+                else if(distance > stopDistance+1)
+                {
+                    anim.SetBool("isPushing",false);
                 }
             }
+        }
+    }
+
+    void AfterLosing()
+    {
+       if(GameObject.FindGameObjectWithTag("Claw").GetComponent<GameObject>().activeInHierarchy == false)
+        {
+            Debug.Log("lose the arm");
         }
     }
 
