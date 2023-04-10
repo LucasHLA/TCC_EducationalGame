@@ -68,7 +68,8 @@ public class CapRobot : Robot
                 }
                 if (hit.CompareTag("Crab"))
                 {
-                    Destroy(hit.gameObject, 0.4f);
+                    GameObject.FindObjectOfType<Crab>().GetComponent<Animator>().SetTrigger("Hit");
+                    Destroy(hit.gameObject, 1f);
                 }
                 if (hit.CompareTag("Claw"))
                 {
