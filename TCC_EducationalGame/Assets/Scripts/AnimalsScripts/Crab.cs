@@ -10,6 +10,7 @@ public class Crab : MonoBehaviour
     [SerializeField] private float maxVision;
     [SerializeField] private float stopDistance;
     [SerializeField] private float speed;
+    [SerializeField] private GameObject claw;
     private Rigidbody2D rb;
     private Animator anim;
     void Start()
@@ -21,11 +22,6 @@ public class Crab : MonoBehaviour
     void FixedUpdate()
     {
         GetPlayer();
-    }
-
-    private void Update()
-    {
-        AfterLosing();
     }
     void GetPlayer()
     {
@@ -45,16 +41,13 @@ public class Crab : MonoBehaviour
                 else if(distance > stopDistance+1)
                 {
                     anim.SetBool("isPushing",false);
+
+                    if (claw == null)
+                    {
+                        anim.SetBool("isPushing", true);
+                    }
                 }
             }
-        }
-    }
-
-    void AfterLosing()
-    {
-       if(GameObject.FindGameObjectWithTag("Claw").GetComponent<GameObject>().activeInHierarchy == false)
-        {
-            Debug.Log("lose the arm");
         }
     }
 
