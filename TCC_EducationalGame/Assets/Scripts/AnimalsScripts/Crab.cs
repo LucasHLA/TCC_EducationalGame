@@ -10,14 +10,19 @@ public class Crab : MonoBehaviour
     [SerializeField] private float maxVision;
     [SerializeField] private float stopDistance;
     [SerializeField] private float speed;
+    [SerializeField] private float pushForce;
+    [SerializeField] private float spinForce;
     [SerializeField] private GameObject claw;
+
     private Rigidbody2D rb;
     private Animator anim;
+    private BoxCollider2D col2D;
     void Start()
     {
         position = transform.position.x;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        col2D = GetComponent<BoxCollider2D>(); 
     }
     void FixedUpdate()
     {
@@ -50,6 +55,12 @@ public class Crab : MonoBehaviour
             }
         }
     }
+
+    public void Defeated()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, pushForce,spinForce);
+        col2D.enabled = false;
+    }    
 
     private void OnDrawGizmos()
     {
