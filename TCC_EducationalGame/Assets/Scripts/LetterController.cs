@@ -101,6 +101,10 @@ public class LetterController : MonoBehaviour
 
             }
         }
+        else if(letter.name == "AutumnLevel")
+        {
+
+        }
         
     }
 

@@ -57,8 +57,8 @@ MonoBehaviour:
   m_ShadowIntensity: 0
   m_ShadowVolumeIntensity: 0.012
   m_Mesh: {fileID: 0}
-  m_PointLightInnerAngle: 0
-  m_PointLightOuterAngle: 39.36
+  m_PointLightInnerAngle: 50.25
+  m_PointLightOuterAngle: 62.33
   m_PointLightInnerRadius: 0.056097284
   m_PointLightOuterRadius: 3.9497654
   m_PointLightDistance: 3
@@ -221,7 +221,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 986073869
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 715060a02630d624fb3fd2141e90bb41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -315,4 +315,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   usingSpecial: 0
+  pushForce: 0
   isOn: 0

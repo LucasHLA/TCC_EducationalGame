@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872491ec31b7fcf4db84b224b00326c6, type: 3}
+  m_Name: AutumnLevel
+  m_EditorClassIdentifier: 
+  lettersSprites:
+  - {fileID: 21300000, guid: ead0a11f49f412f4eaa0664f1fecf2a2, type: 3}
+  - {fileID: 21300000, guid: 7d975d81e792258488b868df464cab45, type: 3}
+  - {fileID: 21300000, guid: 57ed43f33b7034844b8ded1d99d0c917, type: 3}
+  - {fileID: 21300000, guid: ba8a6dae6d4b2d341a5a9d2ab613e7f7, type: 3}
+  - {fileID: 21300000, guid: cdb29c8f191000c4c886c2f9d67e2b52, type: 3}
+  - {fileID: 21300000, guid: 2da07bf4749b3174aa813733fa023b60, type: 3}
+  - {fileID: 21300000, guid: 1131a21445365f945ad3977833030667, type: 3}
+  - {fileID: 21300000, guid: b1b9d12285a379e41a85770f83795f8d, type: 3}
