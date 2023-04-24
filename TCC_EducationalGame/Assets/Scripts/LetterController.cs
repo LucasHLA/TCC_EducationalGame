@@ -103,7 +103,42 @@ public class LetterController : MonoBehaviour
         }
         else if(letter.name == "AutumnLevel")
         {
+            switch (letterTag)
+            {
+                case "C":
+                    lUI.index = 0;
+                    break;
 
+                case "O":
+                    lUI.index = 1;
+                    break;
+
+                case "L":
+                    lUI.index = 2;
+                    break;
+
+                case "H":
+                    lUI.index = 3;
+                    break;
+
+                case "E":
+                    lUI.index = 4;
+                    break;
+
+                case "I":
+                    lUI.index = 5;
+                    break;
+
+                case "T":
+                    lUI.index = 6;
+                    break;
+
+                case "A":
+                    lUI.index = 7;
+                    break;
+
+            }
+            
         }
         
     }
