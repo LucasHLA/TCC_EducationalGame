@@ -129,6 +129,16 @@ public class Player : MonoBehaviour
             LetterController.instance.countLetters++;
         }
 
+        if (other.gameObject.tag == "Boss")
+        {
+            Bear bear = other.gameObject.GetComponent<Bear>();
+
+            if(state == State.Jump && rb.velocity.y <= 0.4)
+            {
+                Debug.Log("Fall");
+            }
+        }
+
         if (other.gameObject.CompareTag("Computer"))
         {
             canUse = true;

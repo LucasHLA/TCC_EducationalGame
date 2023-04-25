@@ -11,14 +11,30 @@ public class Bear : MonoBehaviour
     public float maxRange;
     public LayerMask layer;
     private Rigidbody2D rb;
+    public int lives; 
 
     [Header("Distances")]
     [SerializeField] private float wakeDistance;
     [SerializeField] private float idleDistance;
     [SerializeField] private float walkDistance;
+
+    [Header("Boss Colliders")]
+    public GameObject leftCollider;
+    public GameObject rightCollider;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+        
     }
     public void PlayerDirection()
     {
@@ -52,20 +68,29 @@ public class Bear : MonoBehaviour
         {
             if (area.CompareTag("Player"))
             {
-                if(Vector2.Distance(player.position, rb.position) < wakeDistance)
+                float distance = Vector2.Distance(player.position, rb.position);
+                if ( distance <= wakeDistance)
                 {
+                    leftCollider.SetActive(true);
+                    rightCollider.SetActive(true);
                     anim.SetInteger("state", 1);
-                }
-                else if(Vector2.Distance(player.position, rb.position) <= idleDistance)
-                {
-                    anim.SetInteger("state", 2);
-                }
-                else if(Vector2.Distance(player.position, rb.position) <= walkDistance)
-                {
-                    anim.SetInteger("state", 3);
+                    if(distance <= idleDistance)
+                    {
+                        anim.SetInteger("state", 2);
+                        if(distance <= walkDistance)
+                        {
+                            anim.SetInteger("state", 3);
+                        }
+                    }
+                    
                 }
             }
         }
+    }
+
+    void jumpedOn()
+    {
+        lives--;
     }
 
     private void OnDrawGizmos()

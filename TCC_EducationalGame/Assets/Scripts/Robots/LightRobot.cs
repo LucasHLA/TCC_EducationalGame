@@ -5,13 +5,21 @@ using UnityEngine;
 public class LightRobot : Robot
 {
     [SerializeField] private bool isOn;
+
+    public LayerMask ground;
+    private Collider2D col;
+    [SerializeField] private float jumpForce;
+
+    private void Awake()
+    {
+        col = GetComponent<Collider2D>();
+    }
     protected override void Update()
     {
         base.Update();
         LightUP();
+        Jump();
     }
-        
-    
 
     private void FixedUpdate()
     {
@@ -50,6 +58,14 @@ public class LightRobot : Robot
             {
                 state = State.Special;
             }
+        }
+    }
+
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground))
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
 
