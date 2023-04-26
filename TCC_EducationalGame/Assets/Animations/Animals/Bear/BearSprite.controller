@@ -151,8 +151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: 25
+  speed: 6.6
   attackDistance: 3
+  fixedTimeStep: 0.02
 --- !u!1107 &547472355481907881
 AnimatorStateMachine:
   serializedVersion: 6

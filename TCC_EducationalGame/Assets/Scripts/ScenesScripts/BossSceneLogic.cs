@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class BossSceneLogic : MonoBehaviour
 {
@@ -11,27 +13,34 @@ public class BossSceneLogic : MonoBehaviour
     public GameObject mainCamera;
     public GameObject bossCamera;
     public GameObject bear;
-    public GameObject bossLives;
+    public GameObject bossTries;
+    public TextMeshProUGUI bossTriesUI;
 
+    private void Start()
+    {
+        bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             mainCamera.SetActive(false);
             bossCamera.SetActive(true);
-            bossLives.SetActive(true);
+            bossTries.SetActive(true);
         }
     }
 
     private void Update()
     {
-        if(bear.activeInHierarchy == false)
+        bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+
+        if (bear.activeInHierarchy == false)
         {
             mainCamera.SetActive(true);
             bossCamera.SetActive(false);
             leftCollider.SetActive(false);
             rightCollider.SetActive(false);
-            bossLives.SetActive(false);
+            bossTries.SetActive(false);
         }
     }
 

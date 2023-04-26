@@ -14,7 +14,6 @@ public class GameController : MonoBehaviour
 
     [Header("Player related UI")]
     public TextMeshProUGUI tries;
-    public TextMeshProUGUI bossTries;
 
     [Header("GameOver Panel")]
     public GameObject gameOverPanel;
@@ -22,14 +21,14 @@ public class GameController : MonoBehaviour
     void Start()
     {
         tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
-        bossTries.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+        
     }
 
     void Update()
     {
         StartCoroutine(ShowLevelName());
         tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
-        bossTries.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+        
     }
 
     IEnumerator ShowLevelName()

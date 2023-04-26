@@ -426,7 +426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &59234899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -435,8 +435,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59234898}
   m_LocalRotation: {x: 0, y: 0.9961947, z: -0, w: -0.08715578}
-  m_LocalPosition: {x: 0, y: 0, z: 74}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 92.866}
+  m_LocalScale: {x: 1.5612448, y: 1.5612448, z: 1.5612448}
   m_Children:
   - {fileID: 723479488}
   - {fileID: 1209527166}
@@ -446,7 +446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 190, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 402, y: -159}
+  m_AnchoredPosition: {x: 172, y: -232}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &96883755 stripped
@@ -4792,7 +4792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d5de63da255d44c81bdf4d24eee598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackOffset: {x: -1.31, y: -0.3, z: 0}
+  attackOffset: {x: -1.31, y: -0.2, z: 0}
   attackRange: 1.7
   attackMask:
     serializedVersion: 2
@@ -4912,15 +4912,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 80
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &710486678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,6 +4941,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   lives: 5
+  pushForce: 5
+  spinForce: 1
   wakeDistance: 16
   idleDistance: 8
   walkDistance: 7.8
@@ -4959,7 +4961,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.033224344, y: -0.34456122}
+  m_Offset: {x: -0.033224344, y: -0.37749192}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4970,7 +4972,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.202702, y: 1.3108776}
+  m_Size: {x: 2.202702, y: 1.2450162}
   m_EdgeRadius: 0
 --- !u!95 &710486680
 Animator:
@@ -5055,6 +5057,7 @@ Transform:
   m_LocalScale: {x: 1.8214, y: 1.8214, z: 1.8214}
   m_Children:
   - {fileID: 699101286}
+  - {fileID: 1010145236}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6064,6 +6067,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1010145235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010145236}
+  - component: {fileID: 1010145237}
+  m_Layer: 3
+  m_Name: HitCollider
+  m_TagString: BossHit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1010145236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010145235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 710486682}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1010145237
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010145235}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.068606734, y: 0.31558585}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5104265, y: 0.13831368}
+  m_EdgeRadius: 0
 --- !u!1 &1014253376
 GameObject:
   m_ObjectHideFlags: 0
@@ -23096,7 +23156,8 @@ MonoBehaviour:
   mainCamera: {fileID: 1875637800}
   bossCamera: {fileID: 2010184457}
   bear: {fileID: 710486676}
-  bossLives: {fileID: 59234898}
+  bossTries: {fileID: 59234898}
+  bossTriesUI: {fileID: 919983351}
 --- !u!1 &1791194551
 GameObject:
   m_ObjectHideFlags: 0

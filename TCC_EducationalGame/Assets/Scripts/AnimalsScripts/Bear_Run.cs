@@ -9,6 +9,7 @@ public class Bear_Run : StateMachineBehaviour
 
     public float speed = 1f;
     public float attackDistance = 3f;
+    public float fixedTimeStep = 0.02f;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -20,7 +21,7 @@ public class Bear_Run : StateMachineBehaviour
     {
         GameObject.FindObjectOfType<Bear>().PlayerDirection();
         Vector2 target = new Vector2(player.position.x, rb.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime);
+        Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * fixedTimeStep);
         rb.MovePosition(newPos);
 
         if(Vector2.Distance(player.position, rb.position) <= attackDistance)

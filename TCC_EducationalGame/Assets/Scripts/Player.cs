@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     {
         anim.SetInteger("State", (int)state);
         Jump();
-       
+
         if (canUse)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -114,6 +114,7 @@ public class Player : MonoBehaviour
         {
             state = State.Jump; 
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -129,14 +130,13 @@ public class Player : MonoBehaviour
             LetterController.instance.countLetters++;
         }
 
-        if (other.gameObject.tag == "Boss")
+        if (other.gameObject.tag == "BossHit")
         {
             Bear bear = other.gameObject.GetComponent<Bear>();
 
-            if(state == State.Jump && rb.velocity.y <= 0.4)
-            {
-                Debug.Log("Fall");
-            }
+            GameObject.FindObjectOfType<Bear>().jumpedOn();
+            state = State.Jump;
+            rb.AddForce(Vector2.up * (jumpForce + 7), ForceMode2D.Impulse);
         }
 
         if (other.gameObject.CompareTag("Computer"))

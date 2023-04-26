@@ -11,7 +11,9 @@ public class Bear : MonoBehaviour
     public float maxRange;
     public LayerMask layer;
     private Rigidbody2D rb;
-    public int lives; 
+    public int lives;
+    [SerializeField] private float pushForce;
+    [SerializeField] private float spinForce;
 
     [Header("Distances")]
     [SerializeField] private float wakeDistance;
@@ -21,10 +23,11 @@ public class Bear : MonoBehaviour
     [Header("Boss Colliders")]
     public GameObject leftCollider;
     public GameObject rightCollider;
-
+    private Collider2D col2D;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col2D = GetComponent<BoxCollider2D>();
     }
 
     private void Start()
@@ -88,9 +91,21 @@ public class Bear : MonoBehaviour
         }
     }
 
-    void jumpedOn()
+    public void jumpedOn()
     {
-        lives--;
+        if(lives >= 0)
+        {
+            lives--;
+        }
+    }
+
+    void Defeated()
+    {
+        if (lives <= 0)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, pushForce, spinForce);
+            col2D.enabled = false;
+        }
     }
 
     private void OnDrawGizmos()

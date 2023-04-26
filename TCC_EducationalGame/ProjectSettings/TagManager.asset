@@ -30,6 +30,7 @@ TagManager:
   - I
   - A
   - Bear
+  - BossHit
   layers:
   - Default
   - TransparentFX
