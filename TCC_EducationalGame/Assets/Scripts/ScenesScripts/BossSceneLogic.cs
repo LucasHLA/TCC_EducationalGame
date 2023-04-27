@@ -12,8 +12,10 @@ public class BossSceneLogic : MonoBehaviour
     public GameObject rightCollider;
     public GameObject mainCamera;
     public GameObject bossCamera;
-    public GameObject bear;
+    public bool isDestroyed;
+    public bool active;
     public GameObject bossTries;
+    public GameObject letterDrop;
     public TextMeshProUGUI bossTriesUI;
 
     private void Start()
@@ -22,27 +24,40 @@ public class BossSceneLogic : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !active)
         {
             mainCamera.SetActive(false);
             bossCamera.SetActive(true);
             bossTries.SetActive(true);
+            active = true;
         }
     }
 
     private void Update()
     {
-        bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
-
-        if (bear.activeInHierarchy == false)
+        if(!isDestroyed)
         {
-            mainCamera.SetActive(true);
-            bossCamera.SetActive(false);
+            bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+        }
+
+        BossDefeated();
+    }
+
+    void BossDefeated()
+    {
+        if (isDestroyed)
+        {
+            StartCoroutine(ChangeCamera());
             leftCollider.SetActive(false);
             rightCollider.SetActive(false);
             bossTries.SetActive(false);
         }
     }
 
-
+    IEnumerator ChangeCamera()
+    {
+        yield return new WaitForSeconds(1.7f);
+        mainCamera.SetActive(true);
+        bossCamera.SetActive(false);
+    }
 }

@@ -12,6 +12,8 @@ public class Bear : MonoBehaviour
     public LayerMask layer;
     private Rigidbody2D rb;
     public int lives;
+    public GameObject letterDrop;
+
     [SerializeField] private float pushForce;
     [SerializeField] private float spinForce;
 
@@ -23,7 +25,8 @@ public class Bear : MonoBehaviour
     [Header("Boss Colliders")]
     public GameObject leftCollider;
     public GameObject rightCollider;
-    private Collider2D col2D;
+    private BoxCollider2D col2D;
+    public BoxCollider2D hitCol2D;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,7 +40,7 @@ public class Bear : MonoBehaviour
 
     private void Update()
     {
-        
+        Defeated();
     }
     public void PlayerDirection()
     {
@@ -103,9 +106,19 @@ public class Bear : MonoBehaviour
     {
         if (lives <= 0)
         {
+            anim.SetInteger("state", 2);
             rb.velocity = new Vector3(rb.velocity.x, pushForce, spinForce);
             col2D.enabled = false;
+            hitCol2D.enabled = false;
+            StartCoroutine(DestroyAfterDefeated());
+            GameObject.FindObjectOfType<BossSceneLogic>().isDestroyed = true;
+            letterDrop.SetActive(true);
         }
+    }
+    IEnumerator DestroyAfterDefeated()
+    {
+        yield return new WaitForSeconds(1.7f);
+        Destroy(this.gameObject);
     }
 
     private void OnDrawGizmos()
