@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class RobotCameraController : MonoBehaviour
 {
     [Header("Camera Configs")]
     [SerializeField] private float speed;
@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     private Transform target;
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Robot").transform;
     }
 
     // Update is called once per frame

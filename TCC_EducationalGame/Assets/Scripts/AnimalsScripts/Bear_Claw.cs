@@ -20,6 +20,12 @@ public class Bear_Claw : MonoBehaviour
         if (hit != null)
         {
             hit.GetComponent<Player>().TakeDamage();
+            hit.GetComponent<Player>().health--;
+
+            if(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health < 0)
+            {
+                GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().ShowGameOver();
+            }
         }
     }
 

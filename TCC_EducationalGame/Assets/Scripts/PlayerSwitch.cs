@@ -10,6 +10,8 @@ public class PlayerSwitch : MonoBehaviour
     public bool playerIsActive = true;
     private Robot activeRobot;
 
+    public GameObject playerCamera;
+    public GameObject robotCamera;
 
 
     private void Start()
@@ -22,7 +24,6 @@ public class PlayerSwitch : MonoBehaviour
         if (activeRobot.isActiveAndEnabled && Input.GetKeyDown(KeyCode.T))
         {
             SwitchPlayer();
-            Debug.Log("Change");
         }
     }
 
@@ -33,13 +34,16 @@ public class PlayerSwitch : MonoBehaviour
             player.enabled = false;
             robot.enabled = true;
             playerIsActive = false;
+            playerCamera.SetActive(false);
+            robotCamera.SetActive(true);
         }
         else
         {
             player.enabled = true;
             robot.enabled = false;
             playerIsActive = true;
-
+            playerCamera.SetActive(true);
+            robotCamera.SetActive(false);
         }
     }
 }
