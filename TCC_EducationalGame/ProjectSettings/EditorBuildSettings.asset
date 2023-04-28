@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Verao.unity
     guid: df69acea70058024d81f2b79f0784b1e
+  - enabled: 1
+    path: Assets/Scenes/Outono.unity
+    guid: 94325fbe89dfba441aa6db1c6190629c
   m_configObjects: {}

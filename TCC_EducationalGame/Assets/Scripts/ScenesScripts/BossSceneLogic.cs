@@ -59,5 +59,6 @@ public class BossSceneLogic : MonoBehaviour
         yield return new WaitForSeconds(1.7f);
         mainCamera.SetActive(true);
         bossCamera.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

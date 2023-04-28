@@ -46,7 +46,7 @@ public class LevelSelector : MonoBehaviour
         }
         else
         {
-            GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "Primavera";
+            GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "LabClean";
         }
     }
 }

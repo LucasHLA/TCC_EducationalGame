@@ -157,6 +157,12 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().summer = true;
         }
 
+        if (other.gameObject.CompareTag("Apple"))
+        {
+            Destroy(other.gameObject);
+            GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().autumn = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
