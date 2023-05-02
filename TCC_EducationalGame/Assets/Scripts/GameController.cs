@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
 
     [Header("Player related UI")]
     public TextMeshProUGUI tries;
+    public GameObject leaf;
 
     [Header("GameOver Panel")]
     public GameObject gameOverPanel;
@@ -36,7 +37,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(nameShowSpeed);
         canvas.SetActive(true);
         levelIndicator.SetActive(true);
-
+        leaf.SetActive(true);
     }
 
     public void ShowGameOver()
