@@ -13,7 +13,7 @@ public class IceBlocks : MonoBehaviour
 
     void Update()
     {
-        if(health <= 3 && health > 0)
+        if(health < 3 && health > 0)
         {
             anim.SetInteger("state", 1);
         }
