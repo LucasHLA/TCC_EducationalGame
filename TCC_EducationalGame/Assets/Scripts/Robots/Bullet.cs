@@ -18,6 +18,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //here comes any hit that the bullet takes or collide with
+        if (other.CompareTag("IceBlock"))
+        {
+            GameObject.FindGameObjectWithTag("IceBlock").GetComponent<IceBlocks>().health--;
+            Destroy(this.gameObject,0.1f);
+        }
     }
 }
