@@ -12,7 +12,7 @@ public class SceneLevel : SceneController
         if (other.gameObject.CompareTag("Player") && 
             GameObject.FindObjectOfType<LetterController>().GetComponent<LetterController>().canTeleport == true)
         {
-            GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().canvas.SetActive(false);
+            GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().playerTries.SetActive(false);
             StartCoroutine(ClearTransition());
         }
     }

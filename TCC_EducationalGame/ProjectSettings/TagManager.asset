@@ -33,6 +33,12 @@ TagManager:
   - BossHit
   - Apple
   - IceBlock
+  - G
+  - B
+  - D
+  - N
+  - O+
+  - E++
   layers:
   - Default
   - TransparentFX

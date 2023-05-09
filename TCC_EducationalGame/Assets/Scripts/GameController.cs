@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI LevelNameObject;
     public GameObject levelIndicator;
     [SerializeField] private float nameShowSpeed;
-    public GameObject canvas;
+    public GameObject playerTries;
 
     [Header("Player related UI")]
     public TextMeshProUGUI tries;
@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour
     IEnumerator ShowLevelName()
     {
         yield return new WaitForSeconds(nameShowSpeed);
-        canvas.SetActive(true);
+        playerTries.SetActive(true);
         levelIndicator.SetActive(true);
         leaf.SetActive(true);
     }

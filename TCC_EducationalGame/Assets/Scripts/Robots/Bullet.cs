@@ -23,5 +23,12 @@ public class Bullet : MonoBehaviour
             GameObject.FindGameObjectWithTag("IceBlock").GetComponent<IceBlocks>().health--;
             Destroy(this.gameObject,0.1f);
         }
+
+        
+
+        if (other.gameObject.layer == 3)
+        {
+            Destroy(this.gameObject, 0.1f);
+        }
     }
 }

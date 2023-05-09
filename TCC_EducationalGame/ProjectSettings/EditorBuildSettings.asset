@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outono.unity
     guid: 94325fbe89dfba441aa6db1c6190629c
+  - enabled: 1
+    path: Assets/Scenes/Inverno.unity
+    guid: 1347c3f7621eef14c90f292c9db6f258
   m_configObjects: {}

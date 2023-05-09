@@ -140,6 +140,55 @@ public class LetterController : MonoBehaviour
             }
             
         }
+        else if(letter.name == "WinterLevel")
+        {
+            switch (letterTag)
+            {
+                case "G":
+                    lUI.index = 0;
+                    break;
+
+                case "L":
+                    lUI.index = 1;
+                    break;
+
+                case "O":
+                    lUI.index = 2;
+                    break;
+
+                case "B":
+                    lUI.index = 3;
+                    break;
+
+                case "O+":
+                    lUI.index = 4;
+                    break;
+
+                case "D":
+                    lUI.index = 5;
+                    break;
+
+                case "E":
+                    lUI.index = 6;
+                    break;
+
+                case "N":
+                    lUI.index = 7;
+                    break;
+
+                case "E+":
+                    lUI.index = 8;
+                    break;
+
+                case "V":
+                    lUI.index = 9;
+                    break;
+
+                case "E++":
+                    lUI.index = 10;
+                    break;
+            }
+        }
         
     }
 

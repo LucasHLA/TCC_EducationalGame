@@ -9,12 +9,10 @@ public class MovingBridge : MonoBehaviour
     [SerializeField] private float _checkDistance = 0.05f;
     private Transform _targetWaypoint;
     private int _currentWaypointIndex = 0;
-    private Transform _originalParent;
 
     void Start()
     {
         _targetWaypoint = _waypoints[0];
-        _originalParent = transform.parent;
     }
 
 
@@ -32,6 +30,7 @@ public class MovingBridge : MonoBehaviour
         }
     }
 
+
     private Transform GetNextWaypoint()
     {
         _currentWaypointIndex++;
@@ -40,5 +39,21 @@ public class MovingBridge : MonoBehaviour
             _currentWaypointIndex = 0;
         }
         return _waypoints[_currentWaypointIndex];
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Robot"))
+        {
+            other.transform.SetParent(this.transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Robot"))
+        {
+            other.transform.SetParent(null);
+        }
     }
 }
