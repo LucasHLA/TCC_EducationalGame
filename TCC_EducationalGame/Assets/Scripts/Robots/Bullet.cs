@@ -34,5 +34,11 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject, 0.1f);
             GameObject.FindObjectOfType<IceEnemyController>().GetComponent<IceEnemyController>().health--;
         }
+
+        if (other.CompareTag("SnowGolem"))
+        {
+            Destroy(this.gameObject, 0.1f);
+            GameObject.FindGameObjectWithTag("SnowGolem").GetComponent<SnowGolem>().Damage();
+        }
     }
 }

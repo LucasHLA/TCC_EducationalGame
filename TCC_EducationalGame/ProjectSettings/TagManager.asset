@@ -40,6 +40,7 @@ TagManager:
   - O+
   - E++
   - Enemy
+  - SnowGolem
   layers:
   - Default
   - TransparentFX
