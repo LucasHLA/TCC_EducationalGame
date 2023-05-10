@@ -67,7 +67,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   fixedTimeStep: 0.02
-  attackDistance: 1
+  attackDistance: 1.3
 --- !u!1107 &7626462691712713382
 AnimatorStateMachine:
   serializedVersion: 6

@@ -39,6 +39,7 @@ TagManager:
   - N
   - O+
   - E++
+  - Enemy
   layers:
   - Default
   - TransparentFX

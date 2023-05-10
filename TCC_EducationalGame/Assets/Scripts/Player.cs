@@ -33,7 +33,6 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         anim.SetInteger("State", (int)state);

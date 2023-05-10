@@ -24,11 +24,15 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject,0.1f);
         }
 
-        
-
         if (other.gameObject.layer == 3)
         {
             Destroy(this.gameObject, 0.1f);
+        }
+
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject, 0.1f);
+            GameObject.FindObjectOfType<IceEnemyController>().GetComponent<IceEnemyController>().health--;
         }
     }
 }

@@ -11,10 +11,28 @@ public class TankerRobot : Robot
     public GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
 
+    [Header("Basic Settings")]
+    public int health;
+    public int initialHealth;
+    public float flashDuration = 0.2f;
+    public float flashRate = 0.1f;
+    public Vector3 respawnPoint;
+    private  SpriteRenderer sr;
+
+    [Header("Flash related")]
+    private bool isFlashing = false;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        initialHealth = health;
+        respawnPoint = transform.position;
+    }
     protected override void Update()
     {
         base.Update();
         Shooting();
+        Destroyed();
     }
 
     private void FixedUpdate()
@@ -78,6 +96,48 @@ public class TankerRobot : Robot
     {
         yield return new WaitForSeconds(.4f);
         isShooting = false;
+    }
+
+    public void Damage()
+    {
+        TakeDamage();
+        if (health >= 0)
+        {
+            health--;
+        }
+    }
+
+    public void TakeDamage()
+    {
+        if (!isFlashing)
+        {
+            isFlashing = true;
+            InvokeRepeating("FlashTanker", 0f, flashRate);
+            Invoke("StopFlashing", flashDuration);
+        }
+    }
+
+    private void FlashTanker()
+    {
+        sr.enabled = !sr.enabled;
+    }
+
+    private void StopFlashing()
+    {
+        isFlashing = false;
+        sr.enabled = true;
+        CancelInvoke("FlashTanker");
+    }
+
+    private void Destroyed()
+    {
+        if(health < 0)
+        {
+            transform.position = respawnPoint;
+            GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health--;
+            health = initialHealth;
+        }
     }
 }
 

@@ -18,7 +18,7 @@ public class Robot : MonoBehaviour
     [SerializeField] protected bool usingSpecial;
     [SerializeField] private float pushForce;
     
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();

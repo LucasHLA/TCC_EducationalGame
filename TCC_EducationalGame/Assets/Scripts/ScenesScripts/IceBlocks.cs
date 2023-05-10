@@ -6,6 +6,9 @@ public class IceBlocks : MonoBehaviour
 {
     private Animator anim;
     public int health;
+
+    public GameObject enemyPrefab;
+    public Transform spawnPoint;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -29,5 +32,6 @@ public class IceBlocks : MonoBehaviour
     {
         yield return new WaitForSeconds(0.17f);
         Destroy(this.gameObject);
+        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 }

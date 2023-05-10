@@ -10,7 +10,7 @@ public class LightRobot : Robot
     private Collider2D col;
     [SerializeField] private float jumpForce;
 
-    private void Awake()
+    private void Start()
     {
         col = GetComponent<Collider2D>();
     }

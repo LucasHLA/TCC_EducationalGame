@@ -20,12 +20,14 @@ public class IceEnemy : StateMachineBehaviour
     
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Vector2.MoveTowards(rb.position, robot.position, speed * fixedTimeStep);
+        Vector2 target = new Vector2(robot.position.x, rb.position.y);
+        Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * fixedTimeStep);
+        rb.MovePosition(newPos);
 
         if (Vector2.Distance(robot.position, rb.position) <= attackDistance)
         {
-            //Call the hit animator of the robot here
-            Debug.Log("Attack");
+            animator.GetComponent<IceEnemyController>().Defeated();
+            GameObject.FindGameObjectWithTag("Robot").GetComponent<TankerRobot>().Damage();
         }
     }
 
