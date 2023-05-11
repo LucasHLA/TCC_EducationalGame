@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class BossSceneLogic : MonoBehaviour
@@ -21,10 +22,11 @@ public class BossSceneLogic : MonoBehaviour
     private void Start()
     {
         bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+        bossTriesUI.text = GameObject.FindGameObjectWithTag("SnowGolem").GetComponent<SnowGolem>().health.ToString();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && !active)
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Robot") && !active)
         {
             mainCamera.SetActive(false);
             bossCamera.SetActive(true);
@@ -37,9 +39,15 @@ public class BossSceneLogic : MonoBehaviour
     {
         if(!isDestroyed)
         {
-            bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+            if (SceneManager.GetActiveScene().name == "Outono")
+            {
+                bossTriesUI.text = GameObject.FindGameObjectWithTag("Bear").GetComponent<Bear>().lives.ToString();
+            }   
+            else if(SceneManager.GetActiveScene().name == "Inverno")
+            {
+                bossTriesUI.text = GameObject.FindGameObjectWithTag("SnowGolem").GetComponent<SnowGolem>().health.ToString();
+            }
         }
-
         BossDefeated();
     }
 

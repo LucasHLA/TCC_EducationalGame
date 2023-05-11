@@ -6,7 +6,7 @@ public class SnowGolem : MonoBehaviour
 {
     [Header("Basic Settings")]
     public int health;
-    private Animator anim;
+    public Animator anim;
 
     [Header("Attack Related")]
     public Transform firePoint;
@@ -20,11 +20,14 @@ public class SnowGolem : MonoBehaviour
 
     [Header("Shooting related")]
     [SerializeField] private bool isShooting;
+    [SerializeField] private float waitingTime;
     public float throwForce;
-    public int maxThrows = 3;
-    public float throwInterval = 2f;
+    public int throwsPerCadence = 3;
+    public float cadenceInterval = 1f;
+    public float cooldownInterval = 3f;
 
     private int throwCount = 0;
+
 
     private void Awake()
     {
@@ -37,11 +40,12 @@ public class SnowGolem : MonoBehaviour
         {
             Defeated();
         }
-    }
 
-    private void FixedUpdate()
-    {
-        WakeUpArea();
+        if(anim.GetInteger("state") == 1)
+        {
+            anim.SetTrigger("atk");
+            StartCoroutine(Attack());
+        }
     }
 
     public void Damage()
@@ -67,37 +71,31 @@ public class SnowGolem : MonoBehaviour
         pos += transform.up * offset.y;
 
         Collider2D area = Physics2D.OverlapCircle(pos, range, layer);
-        float distance = Vector2.Distance(robot.position, transform.position);
-        if (area != null)
+        if (area != null )
         {
             if (area.CompareTag("Robot"))
             {
-                Debug.Log(distance);
-                if (distance > 10.9)
-                {
-                    anim.SetInteger("state", 1);
-
-                    if (!isShooting)
-                    {
-                        StartCoroutine(ThrowSnowballs());
-                    }
-                }
+                Debug.Log("Robot");
+                /*anim.SetInteger("state", 1);
+                StartCoroutine(Attack());*/
             }
         }
     }
 
-    private IEnumerator ThrowSnowballs()
+
+    private IEnumerator ThrowSnowballCadence()
     {
         isShooting = true;
         throwCount = 0;
 
-        while (throwCount < maxThrows)
+        while (throwCount < throwsPerCadence)
         {
             ThrowSnowball();
             throwCount++;
-            yield return new WaitForSeconds(throwInterval);
+            yield return new WaitForSeconds(cadenceInterval);
         }
 
+        yield return new WaitForSeconds(cooldownInterval);
         isShooting = false;
     }
 
@@ -108,12 +106,12 @@ public class SnowGolem : MonoBehaviour
         newSnowball.GetComponent<Rigidbody2D>().AddForce(direction * throwForce, ForceMode2D.Impulse);
     }
 
-    private void OnDrawGizmos()
+    private IEnumerator Attack()
     {
-        Vector3 pos = transform.position;
-        pos += transform.right * offset.x;
-        pos += transform.up * offset.y;
-
-        Gizmos.DrawWireSphere(pos, range);
+        yield return new WaitForSeconds(waitingTime);
+        if (!isShooting)
+        {
+            StartCoroutine(ThrowSnowballCadence());
+        }
     }
 }
