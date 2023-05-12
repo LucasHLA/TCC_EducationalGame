@@ -45,6 +45,7 @@ public class BossSceneLogic : MonoBehaviour
             else if(SceneManager.GetActiveScene().name == "Inverno")
             {
                 bossTriesUI.text = GameObject.FindGameObjectWithTag("SnowGolem").GetComponent<SnowGolem>().health.ToString();
+
             }
         }
         BossDefeated();
@@ -58,6 +59,8 @@ public class BossSceneLogic : MonoBehaviour
             leftCollider.SetActive(false);
             rightCollider.SetActive(false);
             bossTries.SetActive(false);
+            GameObject.FindGameObjectWithTag("Barrier").GetComponent<GameObject>().SetActive(false);
+           
         }
     }
 
