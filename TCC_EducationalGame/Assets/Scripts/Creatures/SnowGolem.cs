@@ -12,11 +12,7 @@ public class SnowGolem : MonoBehaviour
     public Transform firePoint;
     public Transform robot;
     public GameObject snowBall;
-
-    [Header("Golem Area")]
-    public LayerMask layer;
-    public Vector3 offset;
-    public float range;
+    public GameObject letterDrop;
 
     [Header("Shooting related")]
     [SerializeField] private bool isShooting;
@@ -43,7 +39,6 @@ public class SnowGolem : MonoBehaviour
 
         if(anim.GetInteger("state") == 1)
         {
-            anim.SetTrigger("atk");
             StartCoroutine(Attack());
         }
     }
@@ -60,37 +55,18 @@ public class SnowGolem : MonoBehaviour
     public void Defeated()
     {
         anim.SetTrigger("defeated");
+        GameObject.FindObjectOfType<BossSceneLogic>().isDestroyed = true;
         Destroy(this.gameObject, 0.8f);
     }
-
-    private void WakeUpArea()
-    {
-        Vector3 pos = transform.position;
-
-        pos += transform.right * offset.x;
-        pos += transform.up * offset.y;
-
-        Collider2D area = Physics2D.OverlapCircle(pos, range, layer);
-        if (area != null )
-        {
-            if (area.CompareTag("Robot"))
-            {
-                Debug.Log("Robot");
-                /*anim.SetInteger("state", 1);
-                StartCoroutine(Attack());*/
-            }
-        }
-    }
-
 
     private IEnumerator ThrowSnowballCadence()
     {
         isShooting = true;
         throwCount = 0;
-
+        
         while (throwCount < throwsPerCadence)
         {
-            ThrowSnowball();
+            anim.SetTrigger("atk");
             throwCount++;
             yield return new WaitForSeconds(cadenceInterval);
         }
@@ -99,7 +75,7 @@ public class SnowGolem : MonoBehaviour
         isShooting = false;
     }
 
-    private void ThrowSnowball()
+    public void ThrowSnowball()
     {
         GameObject newSnowball = Instantiate(snowBall, firePoint.position, Quaternion.identity);
         Vector2 direction = (robot.position - firePoint.position).normalized;

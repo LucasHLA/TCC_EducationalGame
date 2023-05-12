@@ -40,5 +40,16 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject, 0.1f);
             GameObject.FindGameObjectWithTag("SnowGolem").GetComponent<SnowGolem>().Damage();
         }
+
+        if (other.CompareTag("SnowBall"))
+        {
+            Destroy(this.gameObject, 0.1f);
+        }
+
+        if (other.CompareTag("Barrier"))
+        {
+            Destroy(this.gameObject, 0.1f);
+        }
+
     }
 }

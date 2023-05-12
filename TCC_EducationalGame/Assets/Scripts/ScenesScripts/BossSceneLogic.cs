@@ -16,7 +16,6 @@ public class BossSceneLogic : MonoBehaviour
     public bool isDestroyed;
     public bool active;
     public GameObject bossTries;
-    public GameObject letterDrop;
     public TextMeshProUGUI bossTriesUI;
 
     private void Start()

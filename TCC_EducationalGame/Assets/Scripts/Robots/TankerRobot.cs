@@ -10,6 +10,8 @@ public class TankerRobot : Robot
     [Header("Bullet related")]
     public GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
+    public int bullets;
+    private float reloadTime;
 
     [Header("Basic Settings")]
     public int health;
@@ -35,6 +37,8 @@ public class TankerRobot : Robot
         base.Update();
         Shooting();
         Destroyed();
+        Reload();
+       
     }
 
     private void FixedUpdate()
@@ -74,7 +78,7 @@ public class TankerRobot : Robot
 
     private void Shooting()
     {
-        if (Input.GetButtonDown("Fire1") && !isShooting)
+        if (Input.GetButtonDown("Fire1") && !isShooting && bullets > 0)
         {
             state = State.Special;
             isShooting = true;
@@ -86,6 +90,11 @@ public class TankerRobot : Robot
     private void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        if(bullets > 0)
+        {
+            bullets--;
+        }
     }
 
     IEnumerator OnShooting()
@@ -96,10 +105,23 @@ public class TankerRobot : Robot
 
     IEnumerator AfterShooting()
     {
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.8f);
         isShooting = false;
     }
 
+    private void Reload()
+    {
+        if (bullets <= 0)
+        {
+            reloadTime += Time.deltaTime;
+
+            if (reloadTime >= 1.7f)
+            {
+                bullets = 3;
+                reloadTime = 0;
+            }
+        }
+    }
     public void Damage()
     {
         TakeDamage();

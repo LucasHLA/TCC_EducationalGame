@@ -12,10 +12,12 @@ public class WinterLevelController : MonoBehaviour
     [SerializeField] private float nameShowSpeed;
     public GameObject playerTries;
     public GameObject robotTries;
+    public GameObject bullets;
 
     [Header("Player related UI")]
     public TextMeshProUGUI playerTriesText;
     public TextMeshProUGUI robotTriesText;
+    public TextMeshProUGUI bulletsAmountText;
 
     [Header("GameOver Panel")]
     public GameObject gameOverPanel;
@@ -36,8 +38,9 @@ public class WinterLevelController : MonoBehaviour
 
         playerTriesText.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
         robotTriesText.text = GameObject.FindGameObjectWithTag("Robot").GetComponent<TankerRobot>().health.ToString();
+        bulletsAmountText.text = GameObject.FindGameObjectWithTag("Robot").GetComponent<TankerRobot>().bullets.ToString();
 
-        if(GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health < 0)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health < 0)
         {
             ShowGameOver();
         }
@@ -61,11 +64,13 @@ public class WinterLevelController : MonoBehaviour
         {
             playerTries.SetActive(true);
             robotTries.SetActive(false);
+            bullets.SetActive(false);
         }
         else if (robotCamera.activeInHierarchy == true)
         {
             playerTries.SetActive(false);
             robotTries.SetActive(true);
+            bullets.SetActive(true);
         }
     }
 }
