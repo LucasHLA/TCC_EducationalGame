@@ -9154,6 +9154,8 @@ MonoBehaviour:
   playerTriesText: {fileID: 1406423437}
   robotTriesText: {fileID: 1743980420}
   bulletsAmountText: {fileID: 891512688}
+  barrier: {fileID: 1281883667}
+  barrierController: {fileID: 1329069252}
   gameOverPanel: {fileID: 32846976}
   playerCamera: {fileID: 1499597220}
   robotCamera: {fileID: 1055626530}
@@ -13423,8 +13425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTrigger: {fileID: 589969248}
-  leftCollider: {fileID: 0}
-  rightCollider: {fileID: 0}
+  leftCollider: {fileID: 817499658}
+  rightCollider: {fileID: 238033229}
   mainCamera: {fileID: 1055626530}
   bossCamera: {fileID: 76421373}
   isDestroyed: 0
@@ -34215,7 +34217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723286736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 307.9, y: -7.7, z: 15.140074}
+  m_LocalPosition: {x: 308.04, y: -7.84, z: 15.140074}
   m_LocalScale: {x: 0.3243131, y: 0.3243131, z: 0.3243131}
   m_Children: []
   m_Father: {fileID: 1084678341}

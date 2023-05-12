@@ -56,6 +56,7 @@ public class SnowGolem : MonoBehaviour
     {
         anim.SetTrigger("defeated");
         GameObject.FindObjectOfType<BossSceneLogic>().isDestroyed = true;
+        GameObject.FindObjectOfType<WinterLevelController>().GetComponent<WinterLevelController>().DesactivateBarrier();
         Destroy(this.gameObject, 0.8f);
     }
 

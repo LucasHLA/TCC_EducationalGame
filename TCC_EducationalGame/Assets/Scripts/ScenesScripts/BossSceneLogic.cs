@@ -59,7 +59,6 @@ public class BossSceneLogic : MonoBehaviour
             leftCollider.SetActive(false);
             rightCollider.SetActive(false);
             bossTries.SetActive(false);
-            GameObject.FindGameObjectWithTag("Barrier").GetComponent<GameObject>().SetActive(false);
            
         }
     }

@@ -18,13 +18,15 @@ public class WinterLevelController : MonoBehaviour
     public TextMeshProUGUI playerTriesText;
     public TextMeshProUGUI robotTriesText;
     public TextMeshProUGUI bulletsAmountText;
+    public GameObject barrier;
+    public GameObject barrierController;
 
     [Header("GameOver Panel")]
     public GameObject gameOverPanel;
 
     [Header("Camera Related")]
     public GameObject playerCamera;
-    public GameObject robotCamera;
+    public GameObject robotCamera; 
 
     void Start()
     {
@@ -56,6 +58,15 @@ public class WinterLevelController : MonoBehaviour
     public void ShowGameOver()
     {
         gameOverPanel.SetActive(true);
+    }
+
+    public void DesactivateBarrier()
+    {
+        if (GameObject.FindObjectOfType<BossSceneLogic>().GetComponent<BossSceneLogic>().isDestroyed == true)
+        {
+            barrier.SetActive(false);
+            barrierController.SetActive(false);
+        }
     }
 
     void ChangeCamera()
