@@ -42,6 +42,7 @@ TagManager:
   - Enemy
   - SnowGolem
   - SnowBall
+  - SnowGlobe
   layers:
   - Default
   - TransparentFX

@@ -162,6 +162,12 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().autumn = true;
         }
 
+        if (other.gameObject.CompareTag("SnowGlobe"))
+        {
+            Destroy(other.gameObject);
+            GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().winter = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
