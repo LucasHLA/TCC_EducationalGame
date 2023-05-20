@@ -28,6 +28,14 @@ public class Void : MonoBehaviour
                 GameObject.FindObjectOfType<GameController>().GetComponent<GameController>().ShowGameOver();
             }
         }
+
+        if (other.gameObject.CompareTag("Robot"))
+        {
+            other.collider.GetComponent<TankerRobot>().transform.position = other.collider.GetComponent<TankerRobot>().respawnPoint;
+            GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health--;
+            GetComponent<TankerRobot>().health = GameObject.FindGameObjectWithTag("Robot").GetComponent<TankerRobot>().initialHealth;
+        }
     }
 
     IEnumerator PlayerRespawning()

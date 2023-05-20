@@ -64,9 +64,5 @@ public class Robot : MonoBehaviour
             LetterController.instance.index++;
             LetterController.instance.countLetters++;
         }
-
-        if (other.gameObject.CompareTag("Crab"))
-        {
-        }
     }
 }
