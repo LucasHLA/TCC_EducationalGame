@@ -27737,6 +27737,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 919983351}
     - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
+      propertyPath: playerTries
+      value: 
+      objectReference: {fileID: 740742781}
+    - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1354543908}
@@ -72427,7 +72431,6 @@ MonoBehaviour:
   isDestroyed: 0
   active: 0
   bossTries: {fileID: 59234898}
-  letterDrop: {fileID: 441224614}
   bossTriesUI: {fileID: 919983351}
 --- !u!1 &1757407756
 GameObject:

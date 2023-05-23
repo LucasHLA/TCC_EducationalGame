@@ -26617,6 +26617,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1751831204}
     - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
+      propertyPath: playerTries
+      value: 
+      objectReference: {fileID: 1751831204}
+    - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 839351230}
