@@ -6,12 +6,10 @@ using UnityEngine;
 public class ColorfullSprites : MonoBehaviour
 {
     public Image[] images;
-    public float speed = 1f; 
+    public float speed = 1f;
 
-    void Start()
-    {
-
-    }
+    public GameObject startButton;
+    public GameObject exitButton;
 
     void Update()
     {
@@ -22,5 +20,16 @@ public class ColorfullSprites : MonoBehaviour
 
             images[i].color = newColor;
         }
+
+        StartCoroutine(ShowButtons());
+    }
+
+    IEnumerator ShowButtons()
+    {
+        yield return new WaitForSeconds(2.4f);
+        startButton.gameObject.transform.position = new Vector3(startButton.transform.position.x, startButton.transform.position.y,0);
+        yield return new WaitForSeconds(0.7f);
+        exitButton.gameObject.transform.position = new Vector3(exitButton.transform.position.x, exitButton.transform.position.y, 0);
+
     }
 }
