@@ -43,6 +43,7 @@ TagManager:
   - SnowGolem
   - SnowBall
   - SnowGlobe
+  - Target
   layers:
   - Default
   - TransparentFX

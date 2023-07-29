@@ -12,13 +12,13 @@ public class MainCharacter : MonoBehaviour
     private bool isMoving = true;
     private Animator anim;
 
-    void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = false;
         anim = GetComponent<Animator>();
-    }
 
+    }
     void Update()
     {
         if (isMoving)
@@ -31,6 +31,14 @@ public class MainCharacter : MonoBehaviour
                 anim.SetInteger("state", 0);
                 rb.velocity = Vector3.zero;
             }
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Target"))
+        {
+            GameObject.FindObjectOfType<InformationText>().StartDialogue();
         }
     }
 }
