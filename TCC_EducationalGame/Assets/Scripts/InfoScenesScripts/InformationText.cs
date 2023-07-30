@@ -8,9 +8,9 @@ public class InformationText : MonoBehaviour
 
     public TextMeshProUGUI textComponent;
     public GameObject levelObject;
+    public GameObject continueButton;
     public string[] lines;
     public float textSpeed;
-    public bool startDialogueTrigger;
 
     private int index;
 
@@ -40,6 +40,10 @@ public class InformationText : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         levelObject.SetActive(true);
+
+
+        yield return new WaitForSeconds(0.7f);
+        continueButton.SetActive(true);
     }
 
     public void NextLine()

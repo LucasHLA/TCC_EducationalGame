@@ -19698,7 +19698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b320cd47445f4f977d1059cc3e0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LabClean
+  sceneName: InfoPrim
   transitionTime: 1.4
 --- !u!20 &1379465124 stripped
 Camera:
