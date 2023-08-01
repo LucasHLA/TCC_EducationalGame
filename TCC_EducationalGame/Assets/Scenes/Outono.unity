@@ -11883,11 +11883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 427559018498345792, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.95
+      value: -6.02
       objectReference: {fileID: 0}
     - target: {fileID: 427559018498345792, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.655
+      value: -1.63
       objectReference: {fileID: 0}
     - target: {fileID: 427559018498345792, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26962,8 +26962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b320cd47445f4f977d1059cc3e0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LabClean
-  transitionTime: 1.65
+  sceneName: InfoOuto
+  transitionTime: 1.72
 --- !u!61 &939974968
 BoxCollider2D:
   m_ObjectHideFlags: 0

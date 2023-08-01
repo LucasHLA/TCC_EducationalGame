@@ -2051,6 +2051,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &268327495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268327496}
+  m_Layer: 0
+  m_Name: NULL Leaf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268327496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268327495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 139.5664, y: 4.6838684, z: 3812.421}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289557637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,7 +2535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 427559018498345792, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.62
+      value: -1.64
       objectReference: {fileID: 0}
     - target: {fileID: 427559018498345792, guid: 42fe9002a6615214a899f6123254f03d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3202,7 +3232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8667601344287546899, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
@@ -19699,7 +19729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: InfoPrim
-  transitionTime: 1.4
+  transitionTime: 1.6
 --- !u!20 &1379465124 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1533575566083325301, guid: 06a11f768405d0e4daaa5f1a92ad6fe7, type: 3}
@@ -26612,6 +26642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
+      propertyPath: leaf
+      value: 
+      objectReference: {fileID: 268327495}
     - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
       propertyPath: tries
       value: 
