@@ -1141,6 +1141,7 @@ MonoBehaviour:
   continueButton: {fileID: 202995796}
   levelObject: {fileID: 1424928801}
   target: {fileID: 2142914583}
+  teleporter: {fileID: 1913424103}
 --- !u!4 &2042783676
 Transform:
   m_ObjectHideFlags: 0

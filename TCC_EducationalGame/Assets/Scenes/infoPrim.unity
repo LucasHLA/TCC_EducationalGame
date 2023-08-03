@@ -374,7 +374,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   continueButton: {fileID: 438719547}
   levelObject: {fileID: 2131421355}
   target: {fileID: 631680961}
+  teleporter: {fileID: 785591968}
 --- !u!4 &1522660527
 Transform:
   m_ObjectHideFlags: 0
@@ -1192,7 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 631680962}
-  speed: 130
+  speed: 200
   stoppingDistance: 1.3
 --- !u!61 &1732607189
 BoxCollider2D:
