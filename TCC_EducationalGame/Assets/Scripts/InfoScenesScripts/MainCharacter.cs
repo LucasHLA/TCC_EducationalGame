@@ -41,7 +41,7 @@ public class MainCharacter : MonoBehaviour
             GameObject.FindObjectOfType<InformationText>().StartDialogue();
         }
 
-        if (other.gameObject.CompareTag("Teleport"))
+        if (other.gameObject.CompareTag("TeleportInfo"))
         {
             GameObject.FindObjectOfType<SceneController>().ChangeScene();
         }

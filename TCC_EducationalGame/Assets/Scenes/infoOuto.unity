@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 1695422436}
   m_Layer: 0
   m_Name: Teleporter
-  m_TagString: Teleport
+  m_TagString: TeleportInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1058,7 +1058,7 @@ MonoBehaviour:
     aperfei\xE7oando suas habilidades e aprendendo com cada experi\xEAncia. Lembre-se
     de que Deus \xE9 seu eterno guia, iluminando seu caminho e fortalecendo seu cora\xE7\xE3o.
     A jornada ainda reserva maravilhas. "
-  textSpeed: 0.07
+  textSpeed: 0.05
 --- !u!4 &1857770759
 Transform:
   m_ObjectHideFlags: 0

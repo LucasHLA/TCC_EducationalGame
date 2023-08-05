@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: 6.6
+  speed: 6.3
   attackDistance: 3
   fixedTimeStep: 0.02
 --- !u!1107 &547472355481907881

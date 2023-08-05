@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 186988907}
   m_Layer: 0
   m_Name: Teleporter
-  m_TagString: Teleport
+  m_TagString: TeleportInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
     ilumina seu cora\xE7\xE3o, guiando seus passos e aben\xE7oando cada jornada.
     Continue prosperando e aprendendo,  celebre suas conquistas e siga em frente
     com entusiasmo. "
-  textSpeed: 0.07
+  textSpeed: 0.05
 --- !u!4 &715811191
 Transform:
   m_ObjectHideFlags: 0

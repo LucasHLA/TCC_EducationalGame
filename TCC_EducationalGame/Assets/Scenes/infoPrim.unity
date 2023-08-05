@@ -625,7 +625,7 @@ MonoBehaviour:
     voc\xEA cresceu em conhecimento e habilidades. Que Deus alegre seu cora\xE7\xE3o,
     assim como a esta\xE7\xE3o brilha de alegria. Continue explorando e aprendendo,
     cada desafio \xE9 uma semente para um futuro brilhante. "
-  textSpeed: 0.07
+  textSpeed: 0.05
 --- !u!4 &545832705
 Transform:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 785591969}
   m_Layer: 0
   m_Name: Teleporter
-  m_TagString: Teleport
+  m_TagString: TeleportInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 631680962}
-  speed: 200
+  speed: 130
   stoppingDistance: 1.3
 --- !u!61 &1732607189
 BoxCollider2D:
