@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     [Header("State Machine")]
     private Animator anim;
-    private enum State {Idle, Walk, Jump, Using};
+    private enum State { Idle, Walk, Jump, Using };
     private State state = State.Using;
     public bool canUse = false;
     public bool usingPC = false;
@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float jumpForce;
     [SerializeField] private bool isJumping;
+    [SerializeField] public bool bossDMG;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,20 +40,20 @@ public class Player : MonoBehaviour
         anim.SetInteger("State", (int)state);
         Jump();
 
-        if (canUse)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (canUse)
             {
-                usingPC = true;
-                state = State.Using;
-                GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    usingPC = true;
+                    state = State.Using;
+                    GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
+                }
             }
-        }
-        else if(!canUse && state != State.Using)
-        {
-           
-            usingPC = false;
-        }
+            else if (!canUse && state != State.Using)
+            {
+
+                usingPC = false;
+            }
     }
     private void FixedUpdate()
     {
@@ -63,18 +65,18 @@ public class Player : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
-        if( horizontal > 0)
+        if (horizontal > 0)
         {
             state = State.Walk;
-            transform.eulerAngles = new Vector3(0,0,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if( horizontal < 0)
+        else if (horizontal < 0)
         {
             state = State.Walk;
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        
-        if(horizontal == 0 && rb.velocity.y == 0f)
+
+        if (horizontal == 0 && rb.velocity.y == 0f)
         {
             state = State.Idle;
         }
@@ -105,13 +107,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground))
         {
-                state = State.Jump;
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            state = State.Jump;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        if(rb.velocity.y > 0.01f)
+        if (rb.velocity.y > 0.01f)
         {
-            state = State.Jump; 
+            state = State.Jump;
         }
 
     }
@@ -133,9 +135,14 @@ public class Player : MonoBehaviour
         {
             Bear bear = other.gameObject.GetComponent<Bear>();
 
-            GameObject.FindObjectOfType<Bear>().jumpedOn();
+            if (bossDMG)
+            {
+                GameObject.FindObjectOfType<Bear>().jumpedOn();
+                bossDMG = false;
+            }
             state = State.Jump;
-            rb.AddForce(Vector2.up * (jumpForce + 7), ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * (jumpForce + 8), ForceMode2D.Impulse);
+            
         }
 
         if (other.gameObject.CompareTag("Computer"))
@@ -178,5 +185,15 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<Computer>().GetComponent<Computer>().e.SetActive(false);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("ground"))
+        {
+            bossDMG = true;
+        }
+    }
+
+
 }
 

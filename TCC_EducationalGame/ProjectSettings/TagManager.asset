@@ -45,6 +45,7 @@ TagManager:
   - SnowGlobe
   - Target
   - TeleportInfo
+  - ground
   layers:
   - Default
   - TransparentFX

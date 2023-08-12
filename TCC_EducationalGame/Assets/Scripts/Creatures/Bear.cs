@@ -13,6 +13,7 @@ public class Bear : MonoBehaviour
     private Rigidbody2D rb;
     public int lives;
     public GameObject letterDrop;
+    public ParticleSystem startParticle;
 
     [SerializeField] private float pushForce;
     [SerializeField] private float spinForce;
@@ -94,8 +95,16 @@ public class Bear : MonoBehaviour
         }
     }
 
+    IEnumerator StartStopParticle()
+    {
+        startParticle.Play();
+        yield return new WaitForSeconds(1f);
+        startParticle.Stop();
+    }
+
     public void jumpedOn()
     {
+        StartCoroutine(StartStopParticle());
         if(lives >= 0)
         {
             lives--;
