@@ -18,6 +18,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void PosGameStart()
+    {
+        SceneManager.LoadScene(sceneName);
+        //Iniciar o Contador de tempo aqui
+    }
     public void ExitGame()
     {
         Application.Quit();
