@@ -11,4 +11,16 @@ public class PosGameController : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
+
+    void Start()
+    {
+        if (startChronometer)
+        {
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().StartChronometer();
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().StopChronometer();
+        }
+    }
 }

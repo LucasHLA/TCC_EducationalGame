@@ -46,6 +46,7 @@ TagManager:
   - Target
   - TeleportInfo
   - ground
+  - Chronometer
   layers:
   - Default
   - TransparentFX
