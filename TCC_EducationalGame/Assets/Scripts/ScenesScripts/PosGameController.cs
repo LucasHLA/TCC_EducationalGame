@@ -5,7 +5,7 @@ using UnityEngine;
 public class PosGameController : MonoBehaviour
 {
     public bool posGameActive;
-
+    public bool posGameEffects;
     public bool startChronometer;
     void Awake()
     {
@@ -14,13 +14,11 @@ public class PosGameController : MonoBehaviour
 
     void Start()
     {
-        if (startChronometer)
-        {
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().StartChronometer();
-        }
-        else
-        {
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().StopChronometer();
-        }
+      
+    }
+
+    void Update()
+    {
+        
     }
 }

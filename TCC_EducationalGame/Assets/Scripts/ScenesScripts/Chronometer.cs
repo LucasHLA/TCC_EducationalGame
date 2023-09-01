@@ -4,18 +4,13 @@ using UnityEngine.UI;
 public class Chronometer : MonoBehaviour
 {
     public Text timerText;
+    public bool isCounting = false;
 
     private float startTime;
-    public bool isRunning;
-
-    void Start()
-    {
-        ResetChronometer();
-    }
 
     void Update()
     {
-        if (isRunning)
+        if (isCounting && GameObject.FindObjectOfType<PosGameController>().startChronometer)
         {
             float elapsedTime = Time.time - startTime;
 
@@ -26,25 +21,22 @@ public class Chronometer : MonoBehaviour
             string formattedTime = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
             timerText.text = formattedTime;
         }
-
-        
     }
 
     public void StartChronometer()
     {
         startTime = Time.time;
-        isRunning = true;
+        isCounting = true;
     }
 
     public void StopChronometer()
     {
-        isRunning = false;
+        isCounting = false;
     }
 
     public void ResetChronometer()
     {
         timerText.text = "00:00:000";
         startTime = 0f;
-        isRunning = false;
     }
 }
