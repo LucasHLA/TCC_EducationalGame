@@ -16,11 +16,17 @@ public class SceneController : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneName);
+
+        if(GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        {
+            GameObject.FindObjectOfType<Chronometer>().StopChronometer();
+            GameObject.FindObjectOfType<PosGameController>().accumulatedTime = 0f;
+        }
     }
 
     public void PosGameStart()
     {
-        SceneManager.LoadScene("LabClean");
+        SceneManager.LoadScene(sceneName);
         GameObject.FindObjectOfType<PosGameController>().posGameEffects = true;
     }
     public void ExitGame()

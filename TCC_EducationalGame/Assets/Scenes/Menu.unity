@@ -2119,7 +2119,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posGameActive: 1
+  posGameEffects: 0
   startChronometer: 0
+  springTime: 
+  summerTime: 
+  autumnTime: 
+  winterTime: 
+  accumulatedTime: 0
 --- !u!4 &1407822305
 Transform:
   m_ObjectHideFlags: 0

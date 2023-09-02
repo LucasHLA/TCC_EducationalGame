@@ -12,7 +12,7 @@ public class Chronometer : MonoBehaviour
     {
         if (isCounting && GameObject.FindObjectOfType<PosGameController>().startChronometer)
         {
-            float elapsedTime = Time.time - startTime;
+            float elapsedTime = Time.timeSinceLevelLoad;
 
             int minutes = Mathf.FloorToInt(elapsedTime / 60f);
             int seconds = Mathf.FloorToInt(elapsedTime % 60f);
@@ -20,6 +20,9 @@ public class Chronometer : MonoBehaviour
 
             string formattedTime = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
             timerText.text = formattedTime;
+
+            GameObject.FindObjectOfType<PosGameController>().accumulatedTime = elapsedTime;
+            
         }
     }
 

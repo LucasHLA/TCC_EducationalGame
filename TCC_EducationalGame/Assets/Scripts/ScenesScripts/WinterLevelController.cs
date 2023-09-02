@@ -13,6 +13,7 @@ public class WinterLevelController : MonoBehaviour
     public GameObject playerTries;
     public GameObject robotTries;
     public GameObject bullets;
+    public GameObject chronometerText;
 
     [Header("Player related UI")]
     public TextMeshProUGUI playerTriesText;
@@ -32,6 +33,12 @@ public class WinterLevelController : MonoBehaviour
     {
         playerTriesText.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
         StartCoroutine(ShowLevelName());
+
+        if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        {
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().ResetChronometer();
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
+        }
     }
 
     void Update()
@@ -53,6 +60,21 @@ public class WinterLevelController : MonoBehaviour
         yield return new WaitForSeconds(nameShowSpeed);
         playerTries.SetActive(true);
         levelIndicator.SetActive(true);
+
+        if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        {
+            chronometerText.SetActive(true);
+            GameObject.FindObjectOfType<PosGameController>().startChronometer = true;
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = true;
+
+        }
+        else if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == false)
+        {
+            chronometerText.SetActive(false);
+            GameObject.FindObjectOfType<PosGameController>().startChronometer = false;
+            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
+
+        }
     }
 
     public void ShowGameOver()

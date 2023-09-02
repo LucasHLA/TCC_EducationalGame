@@ -15,6 +15,6 @@ public class InformationController : MonoBehaviour
         levelObject.SetActive(false);
         GameObject.FindObjectOfType<InformationText>().textComponent.text = string.Empty;
         target.transform.position = new Vector3(+1500,transform.position.y,transform.position.z);
-        teleporter.transform.position = new Vector3(+1410, transform.position.y, transform.position.z);
+        teleporter.transform.position = new Vector3(+1410, 3f, transform.position.z);
     }
 }
