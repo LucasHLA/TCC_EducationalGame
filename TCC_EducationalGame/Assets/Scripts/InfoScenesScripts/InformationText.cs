@@ -16,31 +16,36 @@ public class InformationText : MonoBehaviour
 
     void Start()
     {
-        textComponent.text = string.Empty;
+        // Certifique-se de que textComponent não seja nulo
+        if (textComponent != null)
+        {
+            textComponent.text = string.Empty;
+            StartDialogue(); // Comece o diálogo imediatamente, se desejar
+        }
+        else
+        {
+            Debug.LogError("O TextMeshProUGUI não está atribuído ao componente!");
+        }
     }
 
     void Update()
     {
-
+        // Se desejar, você pode adicionar lógica de avanço de linha aqui
     }
 
     public void StartDialogue()
     {
         index = 0;
-        StartCoroutine(Type());
+        StartCoroutine(Type(lines[index])); // Passe a linha diretamente para Type
     }
 
-    IEnumerator Type()
+    IEnumerator Type(string line)
     {
-        foreach (char  c in lines[index].ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }
+        // Use a linha passada como argumento
+        textComponent.text = line;
 
         yield return new WaitForSeconds(0.5f);
         levelObject.SetActive(true);
-
 
         yield return new WaitForSeconds(0.7f);
         continueButton.SetActive(true);
@@ -48,11 +53,11 @@ public class InformationText : MonoBehaviour
 
     public void NextLine()
     {
-        if(index < lines.Length)
+        if (index < lines.Length)
         {
             index++;
             textComponent.text = string.Empty;
-            StartCoroutine(Type());
+            StartCoroutine(Type(lines[index])); // Passe a próxima linha diretamente para Type
         }
         else
         {

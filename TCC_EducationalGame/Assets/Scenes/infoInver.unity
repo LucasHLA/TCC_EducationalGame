@@ -888,7 +888,7 @@ MonoBehaviour:
     esta\xE7\xE3o para se recolher e fortalecer-se com sabedoria. Lembre-se de que
     Deus \xE9 sua fonte de for\xE7a, aquecendo seu cora\xE7\xE3o nos dias frios e
     guiando seus passos em cada jornada."
-  textSpeed: 0.05
+  textSpeed: 0
 --- !u!4 &1561486614
 Transform:
   m_ObjectHideFlags: 0
