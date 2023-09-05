@@ -6,6 +6,7 @@ public class InformationController : MonoBehaviour
 {
     public GameObject continueButton;
     public GameObject levelObject;
+    public GameObject textObject;
     public GameObject target;
     public GameObject teleporter;
 
@@ -13,7 +14,7 @@ public class InformationController : MonoBehaviour
     {
         continueButton.SetActive(false);
         levelObject.SetActive(false);
-        GameObject.FindObjectOfType<InformationText>().textComponent.text = string.Empty;
+        textObject.SetActive(false);
         target.transform.position = new Vector3(+1500,transform.position.y,transform.position.z);
         teleporter.transform.position = new Vector3(+1410, 3f, transform.position.z);
     }

@@ -11,6 +11,7 @@ public class MainCharacter : MonoBehaviour
     private Rigidbody2D rb;
     private bool isMoving = true;
     private Animator anim;
+    public GameObject textObject;
 
     private void Awake()
     {
@@ -28,7 +29,7 @@ public class MainCharacter : MonoBehaviour
             anim.SetInteger("state", 1);
             if (Vector3.Distance(transform.position, target.position) < stoppingDistance)
             {
-                anim.SetInteger("state", 0);
+                anim.SetInteger("state", 0);;
                 rb.velocity = Vector3.zero;
             }
         }
@@ -38,7 +39,7 @@ public class MainCharacter : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Target"))
         {
-            GameObject.FindObjectOfType<InformationText>().StartDialogue();
+            textObject.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("TeleportInfo"))
