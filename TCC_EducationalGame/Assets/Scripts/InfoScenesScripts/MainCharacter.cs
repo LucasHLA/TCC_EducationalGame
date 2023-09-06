@@ -29,7 +29,7 @@ public class MainCharacter : MonoBehaviour
             anim.SetInteger("state", 1);
             if (Vector3.Distance(transform.position, target.position) < stoppingDistance)
             {
-                anim.SetInteger("state", 0);;
+                anim.SetInteger("state", 0); ;
                 rb.velocity = Vector3.zero;
             }
         }
