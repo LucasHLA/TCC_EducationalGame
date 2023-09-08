@@ -15,6 +15,7 @@ public class PosGameInformation : MonoBehaviour
     public GameObject RewardImage;
     public GameObject continueButton;
     public GameObject rewardText;
+    public GameObject galleryText;
     public GameObject saveButton;
     void Update()
     {
@@ -39,6 +40,7 @@ public class PosGameInformation : MonoBehaviour
         RewardImage.SetActive(false);
         rewardText.SetActive(false);
         saveButton.SetActive(false);
+        galleryText.SetActive(false);
         GameObject.FindObjectOfType<SceneController>().ChangeScene();
 
     }
