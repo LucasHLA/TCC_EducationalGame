@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/infoInver.unity
     guid: 6cc826c75743b8344b8c4952cc97796d
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 8156178df026d564d9cfc59aab2f0e65
   m_configObjects: {}
