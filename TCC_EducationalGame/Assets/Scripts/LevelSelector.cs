@@ -40,9 +40,13 @@ public class LevelSelector : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "inverno";
         }
-        else if(spring && summer && autumn && winter)
+        else if(spring && summer && autumn && winter && GameObject.FindObjectOfType<PosGameController>().posGameEffects == false)
         {
             GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "Final";
+        }
+        else if(spring && summer && autumn && winter && GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        {
+            GameObject.FindGameObjectWithTag("Teleport").GetComponent<SceneController>().sceneName = "PosGameFinal";
         }
         else
         {

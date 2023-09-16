@@ -41,9 +41,6 @@ public class PosGameController : MonoBehaviour
     {
         AcumulateTime();
         FinalTime();
-
-        
-        Debug.Log(finalTime);
     }
 
     public void AcumulateTime()
