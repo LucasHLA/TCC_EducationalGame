@@ -26,7 +26,7 @@ public class SceneController : MonoBehaviour
 
     public void PosGameStart()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("LabClean");
         GameObject.FindObjectOfType<PosGameController>().posGameEffects = true;
     }
     public void ExitGame()

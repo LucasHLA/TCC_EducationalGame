@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -23,21 +24,28 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
-
-        if(GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        if(SceneManager.GetActiveScene().name != "Lab" && SceneManager.GetActiveScene().name != "LabClean")
         {
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().ResetChronometer();
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
+            tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
+
+            if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+            {
+                GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().ResetChronometer();
+                GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
+            }
         }
+        
+        
     }
 
     void Update()
     {
-
         StartCoroutine(ShowLevelName());
-        tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
-        
+
+        if(SceneManager.GetActiveScene().name != "Lab" && SceneManager.GetActiveScene().name != "LabClean")
+        {
+            tries.text = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health.ToString();
+        }
     }
 
     IEnumerator ShowLevelName()
@@ -46,19 +54,24 @@ public class GameController : MonoBehaviour
         playerTries.SetActive(true);
         levelIndicator.SetActive(true);
         leaf.SetActive(true);
+
         if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
         {
-            chronometerText.SetActive(true);
-            GameObject.FindObjectOfType<PosGameController>().startChronometer = true;
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = true;
-
+            if(SceneManager.GetActiveScene().name != "Lab" && SceneManager.GetActiveScene().name != "LabClean")
+            {
+                chronometerText.SetActive(true);
+                GameObject.FindObjectOfType<PosGameController>().startChronometer = true;
+                GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = true;
+            }
         }
         else if(GameObject.FindObjectOfType<PosGameController>().posGameEffects == false)
         {
-            chronometerText.SetActive(false);
-            GameObject.FindObjectOfType<PosGameController>().startChronometer = false;
-            GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
-
+            if (SceneManager.GetActiveScene().name != "Lab" && SceneManager.GetActiveScene().name != "LabClean")
+            {
+                chronometerText.SetActive(false);
+                GameObject.FindObjectOfType<PosGameController>().startChronometer = false;
+                GameObject.FindGameObjectWithTag("Chronometer").GetComponent<Chronometer>().isCounting = false;
+            }
         }
 
     }

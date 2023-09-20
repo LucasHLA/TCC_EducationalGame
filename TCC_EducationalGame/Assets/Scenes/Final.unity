@@ -505,7 +505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textObject: {fileID: 1198911787}
   continueButton: {fileID: 49430689}
-  levelSelector: {fileID: 0}
 --- !u!4 &364473585
 Transform:
   m_ObjectHideFlags: 0

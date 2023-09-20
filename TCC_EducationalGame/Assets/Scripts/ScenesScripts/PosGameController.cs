@@ -8,6 +8,7 @@ public class PosGameController : MonoBehaviour
 {
     public bool posGameActive;
     public bool posGameEffects;
+    public bool afterPosGame;
     public bool startChronometer;
 
     [Header("Time Variables")]
@@ -26,26 +27,29 @@ public class PosGameController : MonoBehaviour
     public float totalTime4;
     public float totalGeneralTime;
 
-
+    private PosGameController instance;
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
-    void Start()
-    {
-      
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     void Update()
     {
         AcumulateTime();
         FinalTime();
+        ActivatePosGame();
     }
 
     public void AcumulateTime()
-    {
-       
+    {  
         int minutes = Mathf.FloorToInt(accumulatedTime / 60f);
         int seconds = Mathf.FloorToInt(accumulatedTime % 60f);
         int milliseconds = Mathf.FloorToInt((accumulatedTime * 1000) % 1000);
@@ -70,8 +74,6 @@ public class PosGameController : MonoBehaviour
                 totalTime4 = accumulatedTime;
                 break;
         }
-
-
     }
 
     public void FinalTime()
@@ -85,5 +87,26 @@ public class PosGameController : MonoBehaviour
 
         finalTime = finalFormattedTime;
 
+    }
+
+    void ActivatePosGame()
+    {
+        if(SceneManager.GetActiveScene().name == "Final")
+        {
+            posGameActive = true;
+        }
+        else
+        {
+            return;
+        }
+
+        if(SceneManager.GetActiveScene().name == "PosGameFinal")
+        {
+            afterPosGame = true;
+        }
+        else
+        {
+            return;
+        }
     }
 }

@@ -2587,8 +2587,8 @@ MonoBehaviour:
   RewardImage: {fileID: 383616861}
   continueButton: {fileID: 702380764}
   rewardText: {fileID: 2066214638}
-  galleryText: {fileID: 0}
-  saveButton: {fileID: 702380764}
+  galleryText: {fileID: 1265980633}
+  saveButton: {fileID: 423059024}
 --- !u!114 &1612695123
 MonoBehaviour:
   m_ObjectHideFlags: 0
