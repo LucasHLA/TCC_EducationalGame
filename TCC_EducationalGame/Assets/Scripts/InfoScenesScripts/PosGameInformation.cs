@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PosGameInformation : MonoBehaviour
 {
@@ -19,19 +20,27 @@ public class PosGameInformation : MonoBehaviour
     public GameObject saveButton;
     void Update()
     {
-        if(GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+        if(SceneManager.GetActiveScene().name != "infoPosGame")
         {
-            posGameObject.SetActive(true);
-            Destroy(character);
-            Destroy(normalText);
-            Destroy(normalButton);
-            Destroy(levelObject);
+            if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == true)
+            {
+                posGameObject.SetActive(true);
+                Destroy(character);
+                Destroy(normalText);
+                Destroy(normalButton);
+                Destroy(levelObject);
+            }
+            else if (GameObject.FindObjectOfType<PosGameController>().posGameEffects == false)
+            {
+                character.SetActive(true);
+                posGameObject.SetActive(false);
+            }
         }
-        else if(GameObject.FindObjectOfType<PosGameController>().posGameEffects == false)
+        else
         {
-            character.SetActive(true);
-            posGameObject.SetActive(false);
+            return;
         }
+        
     }
 
     public void PosGameContinue()
