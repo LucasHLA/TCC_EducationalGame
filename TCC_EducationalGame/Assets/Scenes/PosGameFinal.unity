@@ -459,64 +459,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37293032}
   m_CullTransparentMesh: 1
---- !u!1 &213866841
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 213866843}
-  - component: {fileID: 213866842}
-  m_Layer: 0
-  m_Name: PosGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &213866842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213866841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e27173713d86c804f82dd73dd89e5cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posGameActive: 1
-  posGameEffects: 1
-  afterPosGame: 0
-  startChronometer: 0
-  springTime: 00:56:100
-  summerTime: 00:56:100
-  autumnTime: 00:56:100
-  winterTime: 00:56:100
-  finalTime: 10:00:00
-  accumulatedTime: 0
-  totalTime1: 0
-  totalTime2: 0
-  totalTime3: 0
-  totalTime4: 0
-  totalGeneralTime: 0
---- !u!4 &213866843
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213866841}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.34121, y: 11.953717, z: -149.68028}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355917274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,5 +3446,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
