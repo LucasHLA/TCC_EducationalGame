@@ -47,6 +47,8 @@ TagManager:
   - TeleportInfo
   - ground
   - Chronometer
+  - Tunnel
+  - SideWall
   layers:
   - Default
   - TransparentFX

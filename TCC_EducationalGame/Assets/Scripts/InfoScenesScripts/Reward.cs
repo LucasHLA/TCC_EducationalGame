@@ -4,11 +4,29 @@ using UnityEngine;
 using System.IO;
 using System.Diagnostics;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Reward : MonoBehaviour
 {
-    public Image coloringImage; // A referência para o componente Image que exibe o desenho para colorir
+    public Image coloringImage;// A referência para o componente Image que exibe o desenho para colorir
+    
     public string nome;
+
+    [Header("Pós Game Related")]
+    public Image[] posGameImages;
+    public Image objectImage;
+    public float finalTime;
+    public bool doTest;
+    void Start()
+    {
+        
+    }
+
+
+    private void Update()
+    {
+        ChangeToDifferentImages();
+    }
     public void SaveImage()
     {
         // Obtém a sprite da imagem exibida no componente Image
@@ -28,5 +46,20 @@ public class Reward : MonoBehaviour
 
         // Salva a matriz de bytes como um arquivo JPG
         File.WriteAllBytes(filePath, bytes);
+    }
+
+    void ChangeToDifferentImages()
+    {
+        if(SceneManager.GetActiveScene().name == "infoPosGame")
+        {
+            finalTime = GameObject.FindObjectOfType<PosGameController>().totalGeneralTime;
+
+            //Fazer um if aqui com os tempos relativos a cada imagem
+            if (doTest)
+            {
+                objectImage.sprite = posGameImages[0].sprite;
+            }
+
+        }
     }
 }

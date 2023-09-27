@@ -25,7 +25,8 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float jumpForce;
     [SerializeField] private bool isJumping;
-    [SerializeField] public bool bossDMG;
+    public bool bossDMG;
+    public bool canJump = true;
 
     void Start()
     {
@@ -105,7 +106,7 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground))
+        if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground) && canJump)
         {
             state = State.Jump;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -175,6 +176,11 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().winter = true;
         }
 
+        if (other.gameObject.CompareTag("SideWall"))
+        {
+            canJump = false;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -183,6 +189,11 @@ public class Player : MonoBehaviour
         {
             canUse = false;
             GameObject.FindObjectOfType<Computer>().GetComponent<Computer>().e.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("SideWall"))
+        {
+            canJump = true;
         }
     }
 

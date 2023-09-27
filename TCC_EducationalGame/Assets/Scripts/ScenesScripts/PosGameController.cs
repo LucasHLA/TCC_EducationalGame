@@ -28,6 +28,12 @@ public class PosGameController : MonoBehaviour
     public float totalGeneralTime;
 
     private PosGameController instance;
+
+    [Header("Gallery Related")]
+    public bool unlockSpring;
+    public bool unlockSummer;
+    public bool unlockAutumn;
+    public bool unlockWinter;
     void Awake()
     {
         if (instance != null)
@@ -46,6 +52,7 @@ public class PosGameController : MonoBehaviour
         AcumulateTime();
         FinalTime();
         ActivatePosGame();
+        UnlockGalleryImages();
     }
 
     public void AcumulateTime()
@@ -110,4 +117,25 @@ public class PosGameController : MonoBehaviour
         }
     }
 
+    public void UnlockGalleryImages()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "infoPrim":
+                unlockSpring = true;
+                break;
+
+            case "infoVerao":
+                unlockSummer = true;
+                break;
+
+            case "infoOuto":
+                unlockAutumn = true;
+                break;
+
+            case "infoInver":
+                unlockWinter = true;
+                break;
+        }
+    }
 }

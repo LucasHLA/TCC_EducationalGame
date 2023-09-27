@@ -17,6 +17,7 @@ public class Robot : MonoBehaviour
     [Header("Moviment related")]
     [SerializeField] protected bool usingSpecial;
     [SerializeField] private float pushForce;
+    public bool insideTheTunnel;
     
     void Awake()
     {
@@ -28,6 +29,7 @@ public class Robot : MonoBehaviour
     protected virtual void Update()
     {
         anim.SetInteger("State", (int)state);
+        
     }
 
     protected void RobotBaseMoviment()
@@ -63,6 +65,22 @@ public class Robot : MonoBehaviour
             Destroy(other.gameObject);
             LetterController.instance.index++;
             LetterController.instance.countLetters++;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Tunnel"))
+        {
+            insideTheTunnel = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Tunnel"))
+        {
+            insideTheTunnel = false;
         }
     }
 }

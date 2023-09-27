@@ -57,7 +57,7 @@ public class RedRobot : Robot
         {
             usingSpecial = true;
         }
-        else if(Input.GetKeyUp(KeyCode.UpArrow) && usingSpecial)
+        else if(Input.GetKeyUp(KeyCode.UpArrow) && usingSpecial && !insideTheTunnel)
         {
             usingSpecial = false;
         }
