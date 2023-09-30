@@ -34,21 +34,19 @@ public class Gallery : MonoBehaviour
         {
             imageLocks[3].SetActive(false);
         }
-        //if (GameObject.FindObjectOfType<PosGameController>().unlockCientist)
-        //{
-        //    imageLocks[4].SetActive(false);
-        //}
-        //if (GameObject.FindObjectOfType<PosGameController>().unlockBoss)
-        //{
-        //    imageLocks[5].SetActive(false);
-        //}
-        //if (GameObject.FindObjectOfType<PosGameController>().unlockSeasons)
-        //{
-        //    imageLocks[6].SetActive(false);
-        //}
-        //if (GameObject.FindObjectOfType<PosGameController>().unlockRobots)
-        //{
-        //    imageLocks[7].SetActive(false);
-        //}
+        if (GameObject.FindObjectOfType<PosGameController>().unlockCientist)
+        {
+            imageLocks[4].SetActive(false);
+        }
+        if (GameObject.FindObjectOfType<PosGameController>().unlockSeasons)
+        {
+            imageLocks[5].SetActive(false);
+        }
+        if (GameObject.FindObjectOfType<PosGameController>().unlockRobots)
+        {
+            imageLocks[6].SetActive(false);
+        }
     }
+
+
 }

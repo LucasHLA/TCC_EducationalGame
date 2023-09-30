@@ -55,11 +55,23 @@ public class Reward : MonoBehaviour
             finalTime = GameObject.FindObjectOfType<PosGameController>().totalGeneralTime;
 
             //Fazer um if aqui com os tempos relativos a cada imagem
-            if (doTest)
+            if (finalTime <= 960)
             {
                 objectImage.sprite = posGameImages[0].sprite;
+                GameObject.FindObjectOfType<PosGameController>().unlockCientist = true;
             }
 
+            if(finalTime <= 660)
+            {
+                objectImage.sprite = posGameImages[1].sprite;
+                GameObject.FindObjectOfType<PosGameController>().unlockSeasons = true;
+            }
+
+            if(finalTime <= 360)
+            {
+                objectImage.sprite = posGameImages[2].sprite;
+                GameObject.FindObjectOfType<PosGameController>().unlockRobots = true;
+            }
         }
     }
 }

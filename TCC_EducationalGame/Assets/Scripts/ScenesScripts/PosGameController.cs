@@ -34,6 +34,9 @@ public class PosGameController : MonoBehaviour
     public bool unlockSummer;
     public bool unlockAutumn;
     public bool unlockWinter;
+    public bool unlockCientist;
+    public bool unlockSeasons;
+    public bool unlockRobots;
     void Awake()
     {
         if (instance != null)
