@@ -157,10 +157,7 @@ public class TankerRobot : Robot
     {
         if(health < 0)
         {
-            transform.position = respawnPoint;
-            GameObject.FindObjectOfType<PlayerSwitch>().GetComponent<PlayerSwitch>().SwitchPlayer();
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().health--;
-            health = initialHealth;
+            GameObject.FindObjectOfType<WinterLevelController>().ShowGameOver();
         }
     }
 }

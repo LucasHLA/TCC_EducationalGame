@@ -176,11 +176,6 @@ public class Player : MonoBehaviour
             GameObject.FindObjectOfType<LevelSelector>().GetComponent<LevelSelector>().winter = true;
         }
 
-        if (other.gameObject.CompareTag("SideWall"))
-        {
-            canJump = false;
-        }
-
     }
 
     private void OnTriggerExit2D(Collider2D other)
