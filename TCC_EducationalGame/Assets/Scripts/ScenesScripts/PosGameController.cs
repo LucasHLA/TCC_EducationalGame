@@ -113,11 +113,14 @@ public class PosGameController : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "PosGameFinal")
         {
             afterPosGame = true;
+            posGameEffects = false;
         }
         else
         {
             return;
         }
+
+
     }
 
     public void UnlockGalleryImages()
