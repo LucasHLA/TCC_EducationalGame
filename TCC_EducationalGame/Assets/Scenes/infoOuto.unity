@@ -705,6 +705,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coloringImage: {fileID: 383616862}
   nome: "Ma\xE7a"
+  posGameImages: []
+  objectImage: {fileID: 0}
+  finalTime: 0
+  doTest: 0
+  saveDirectory: 
 --- !u!4 &419773867
 Transform:
   m_ObjectHideFlags: 0

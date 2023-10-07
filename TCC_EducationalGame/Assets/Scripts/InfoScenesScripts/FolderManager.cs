@@ -6,9 +6,17 @@ using System.Diagnostics;
 
 public class FolderManager : MonoBehaviour
 {
+    private string saveDirectory;
     public void OpenFolder()
     {
-        string filePath = Application.persistentDataPath + "/";
+
+        saveDirectory = Application.persistentDataPath + "/Recompensas/";
+
+        if (!Directory.Exists(saveDirectory))
+        {
+            Directory.CreateDirectory(saveDirectory);
+        }
+        string filePath = saveDirectory + "/";
 
         string directoryPath = Path.GetDirectoryName(filePath);
         Process.Start("explorer.exe", directoryPath);

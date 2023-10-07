@@ -17,6 +17,9 @@ public class Reward : MonoBehaviour
     public Image objectImage;
     public float finalTime;
     public bool doTest;
+
+    public string saveDirectory;
+
     void Start()
     {
         
@@ -39,7 +42,16 @@ public class Reward : MonoBehaviour
         byte[] bytes = texture.EncodeToJPG(); // Use EncodeToJPG para JPEG
 
         // Define o caminho de destino para salvar a imagem (pode ser ajustado conforme necessário)
-        string filePath = Application.persistentDataPath + "/" + nome + ".jpg";
+        
+
+        saveDirectory = Application.persistentDataPath + "/Recompensas/";
+
+        if (!Directory.Exists(saveDirectory))
+        {
+            Directory.CreateDirectory(saveDirectory);
+        }
+
+        string filePath = saveDirectory + nome + ".jpg";
 
         string directoryPath = Path.GetDirectoryName(filePath);
         Process.Start("explorer.exe", directoryPath);

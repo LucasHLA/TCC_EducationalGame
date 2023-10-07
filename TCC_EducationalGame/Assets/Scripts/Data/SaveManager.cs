@@ -7,13 +7,6 @@ public class SaveManager : MonoBehaviour
 {
     private SaveManager instance;
 
-    //[Header("Levels variables to save")]
-
-    //public bool springLevel;
-    //public bool summerLevel;
-    //public bool autumnLevel;
-    //public bool winterLevel;
-
     [Header("Gallery variables to save")]
 
     public bool springGallery;
@@ -41,10 +34,6 @@ public class SaveManager : MonoBehaviour
     
     void Update()
     {
-        //springLevel = GameObject.FindObjectOfType<LevelSelector>().spring;
-        //summerLevel = GameObject.FindObjectOfType<LevelSelector>().summer;
-        //autumnLevel = GameObject.FindObjectOfType<LevelSelector>().autumn;
-        //winterLevel = GameObject.FindObjectOfType<LevelSelector>().winter;
 
         posGameActive = GameObject.FindObjectOfType<PosGameController>().posGameActive;
         springGallery = GameObject.FindObjectOfType<PosGameController>().unlockSpring;
@@ -58,11 +47,7 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGame()
     {
-        //PlayerPrefs.SetInt("SpringLevel", springLevel ? 1 : 0);
-        //PlayerPrefs.SetInt("SummerLevel", summerLevel ? 1 : 0);
-        //PlayerPrefs.SetInt("AutumnLevel", autumnLevel ? 1 : 0);
-        //PlayerPrefs.SetInt("WinterLevel", winterLevel ? 1 : 0);
-
+      
         PlayerPrefs.SetInt("PosGameActive", posGameActive ? 1 : 0);
         PlayerPrefs.SetInt("SpringGallery", springGallery ? 1 : 0);
         PlayerPrefs.SetInt("SummerGallery", summerGallery ? 1 : 0);
@@ -71,17 +56,13 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("CientistGallery", cientistGallery ? 1 : 0);
         PlayerPrefs.SetInt("SeasonGallery", seasonsGallery ? 1 : 0);
         PlayerPrefs.SetInt("RobotsGallery", robotsGallery ? 1 : 0);
-        
+        Debug.Log("Save");
     }
 
     public void LoadGame()
     {
-        //GameObject.FindObjectOfType<LevelSelector>().spring = PlayerPrefs.GetInt("SpringLevel") == 1;
-        //GameObject.FindObjectOfType<LevelSelector>().summer = PlayerPrefs.GetInt("SummerLevel") == 1;
-        //GameObject.FindObjectOfType<LevelSelector>().autumn = PlayerPrefs.GetInt("AutumnLevel") == 1;
-        //GameObject.FindObjectOfType<LevelSelector>().winter = PlayerPrefs.GetInt("WinterLevel") == 1;
 
-        GameObject.FindObjectOfType<PosGameController>().posGameActive = PlayerPrefs.GetInt("PosGameController") == 1;
+        GameObject.FindObjectOfType<PosGameController>().posGameActive = PlayerPrefs.GetInt("PosGameActive") == 1;
         GameObject.FindObjectOfType<PosGameController>().unlockSpring = PlayerPrefs.GetInt("SpringGallery") == 1;
         GameObject.FindObjectOfType<PosGameController>().unlockSummer = PlayerPrefs.GetInt("SummerGallery") == 1;
         GameObject.FindObjectOfType<PosGameController>().unlockAutumn = PlayerPrefs.GetInt("AutumnGallery") == 1;
@@ -89,5 +70,6 @@ public class SaveManager : MonoBehaviour
         GameObject.FindObjectOfType<PosGameController>().unlockCientist = PlayerPrefs.GetInt("CientistGallery") == 1;
         GameObject.FindObjectOfType<PosGameController>().unlockSeasons = PlayerPrefs.GetInt("SeasonsGallery") == 1;
         GameObject.FindObjectOfType<PosGameController>().unlockRobots = PlayerPrefs.GetInt("RobotsGallery") == 1;
+        Debug.Log("Load");
     }
 }
