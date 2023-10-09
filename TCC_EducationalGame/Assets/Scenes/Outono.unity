@@ -32856,7 +32856,7 @@ PrefabInstance:
     - target: {fileID: 7382919396507137447, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
       propertyPath: chronometerText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1650924961}
     - target: {fileID: 7382919396507137464, guid: 8cde7ab4349c9ac4ebb7cae9fc798409, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -67309,7 +67309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 367278771, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 483290671, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_IsActive
@@ -67465,7 +67465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7747538274005719329, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8667601344287546899, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
       propertyPath: m_IsActive
@@ -67473,6 +67473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
+--- !u!1 &1650924961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1734409794, guid: 153e9d6428720324887f4a785318cf8a, type: 3}
+  m_PrefabInstance: {fileID: 1650924960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1668233568
 GameObject:
   m_ObjectHideFlags: 0
