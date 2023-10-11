@@ -7,6 +7,8 @@ public class SnowGolem : MonoBehaviour
     [Header("Basic Settings")]
     public int health;
     public Animator anim;
+    private AudioSource audiosSource;
+    public AudioClip snowAttackSound;
 
     [Header("Attack Related")]
     public Transform firePoint;
@@ -28,6 +30,7 @@ public class SnowGolem : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        audiosSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -90,5 +93,10 @@ public class SnowGolem : MonoBehaviour
         {
             StartCoroutine(ThrowSnowballCadence());
         }
+    }
+
+    public void PlaySnowAttackSound()
+    {
+        audiosSource.PlayOneShot(snowAttackSound);
     }
 }

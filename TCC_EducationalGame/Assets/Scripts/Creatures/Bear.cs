@@ -14,6 +14,8 @@ public class Bear : MonoBehaviour
     public int lives;
     public GameObject letterDrop;
     public ParticleSystem startParticle;
+    private AudioSource audioSource;
+    public AudioClip bearAttackSound;
 
     [SerializeField] private float pushForce;
     [SerializeField] private float spinForce;
@@ -32,6 +34,7 @@ public class Bear : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col2D = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -133,5 +136,10 @@ public class Bear : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, maxRange);
+    }
+
+    public void PlayAttackSound()
+    {
+        audioSource.PlayOneShot(bearAttackSound);
     }
 }

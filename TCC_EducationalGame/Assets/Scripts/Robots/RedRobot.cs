@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RedRobot : Robot
 {
-    
+    public AudioClip crouchSong;
+
     protected override void Update()
     {
         base.Update();
@@ -53,12 +54,14 @@ public class RedRobot : Robot
 
     void Crouch()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow) && !usingSpecial)
+        if((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.W)) && !usingSpecial)
         {
+            audioSource.PlayOneShot(crouchSong);
             usingSpecial = true;
         }
         else if(Input.GetKeyUp(KeyCode.UpArrow) && usingSpecial && !insideTheTunnel)
         {
+            audioSource.PlayOneShot(crouchSong);
             usingSpecial = false;
         }
     }

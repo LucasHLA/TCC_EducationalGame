@@ -18,12 +18,17 @@ public class Robot : MonoBehaviour
     [SerializeField] protected bool usingSpecial;
     [SerializeField] private float pushForce;
     public bool insideTheTunnel;
-    
+
+
+    [Header("Audiuo Related")]
+    protected AudioSource audioSource;
+    public AudioClip collectSound;
     void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     protected virtual void Update()
@@ -65,6 +70,7 @@ public class Robot : MonoBehaviour
             Destroy(other.gameObject);
             LetterController.instance.index++;
             LetterController.instance.countLetters++;
+            audioSource.PlayOneShot(collectSound);
         }
     }
 

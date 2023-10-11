@@ -8,6 +8,7 @@ public class CapRobot : Robot
     private bool isAttacking;
     [SerializeField] private Transform attackingPoint;
     [SerializeField] private float radius;
+    public AudioClip punchSound;
 
     protected override void Update()
     {
@@ -56,7 +57,7 @@ public class CapRobot : Robot
         {
             isAttacking = true;
             state = State.Special;
-            
+            audioSource.PlayOneShot(punchSound);
             Collider2D hit = Physics2D.OverlapCircle(attackingPoint.position, radius);
 
             if (hit != null)

@@ -9,6 +9,7 @@ public class LightRobot : Robot
     public LayerMask ground;
     private Collider2D col;
     [SerializeField] private float jumpForce;
+    public AudioClip flashlightSound;
 
     private void Start()
     {
@@ -75,6 +76,7 @@ public class LightRobot : Robot
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                audioSource.PlayOneShot(flashlightSound);
                 usingSpecial = false;
             }
         }
@@ -82,6 +84,7 @@ public class LightRobot : Robot
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                audioSource.PlayOneShot(flashlightSound);
                 usingSpecial = true;
             }
         }

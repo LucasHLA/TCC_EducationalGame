@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public float flashDuration = 0.2f;
     public float flashRate = 0.1f;
     private bool isFlashing = false;
-
+   
     [Header("State Machine")]
     private Animator anim;
     private enum State { Idle, Walk, Jump, Using };
@@ -28,12 +28,19 @@ public class Player : MonoBehaviour
     public bool bossDMG;
     public bool canJump = true;
 
+    [Header("Audio Related")]
+    private AudioSource audioSource;
+    public AudioClip jumpSound;
+    public AudioClip runSound;
+    public AudioClip collectSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -65,7 +72,7 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
+        
         if (horizontal > 0)
         {
             state = State.Walk;
@@ -109,6 +116,7 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground) && canJump)
         {
             state = State.Jump;
+            audioSource.PlayOneShot(jumpSound);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
@@ -130,6 +138,7 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             LetterController.instance.index++;
             LetterController.instance.countLetters++;
+            audioSource.PlayOneShot(collectSound);
         }
 
         if (other.gameObject.tag == "BossHit")
@@ -200,6 +209,9 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    public void PlayRunningSound()
+    {
+        audioSource.PlayOneShot(runSound);
+    }
 }
 
