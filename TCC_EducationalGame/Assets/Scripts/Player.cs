@@ -75,12 +75,19 @@ public class Player : MonoBehaviour
         
         if (horizontal > 0)
         {
-            state = State.Walk;
+            if(col.IsTouchingLayers(ground))
+            {
+                state = State.Walk;
+            }
+            
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
         else if (horizontal < 0)
         {
-            state = State.Walk;
+            if (col.IsTouchingLayers(ground))
+            {
+                state = State.Walk;
+            }
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
@@ -124,6 +131,7 @@ public class Player : MonoBehaviour
         {
             state = State.Jump;
         }
+
 
     }
 

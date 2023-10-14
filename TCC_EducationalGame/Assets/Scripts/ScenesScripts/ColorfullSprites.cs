@@ -15,6 +15,7 @@ public class ColorfullSprites : MonoBehaviour
     public GameObject startTimeButton;
     public GameObject conclusionStar;
     public GameObject galleryButton;
+    public GameObject[] saveAndLoadButtons;
     public GameObject galleryPanel;
 
     void Update()
@@ -66,10 +67,19 @@ public class ColorfullSprites : MonoBehaviour
     {
         galleryPanel.SetActive(true);
         galleryButton.SetActive(false);
+        
+        for(int i = 0; i < saveAndLoadButtons.Length; i++)
+        {
+            saveAndLoadButtons[i].SetActive(false);
+        }
     }
     public void CloseGallery()
     {
         galleryPanel.SetActive(false);
         galleryButton.SetActive(true);
+        for (int i = 0; i < saveAndLoadButtons.Length; i++)
+        {
+            saveAndLoadButtons[i].SetActive(true);
+        }
     }
 }

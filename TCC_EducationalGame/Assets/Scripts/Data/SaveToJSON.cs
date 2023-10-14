@@ -42,6 +42,8 @@ public class SaveToJSON : MonoBehaviour
         }
 
         savePath = saveDirectory + "SaveSlot.json";
+
+        Debug.Log("Awake!");
     }
 
     public void SaveGame()
