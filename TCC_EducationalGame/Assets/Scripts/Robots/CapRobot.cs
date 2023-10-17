@@ -9,6 +9,7 @@ public class CapRobot : Robot
     [SerializeField] private Transform attackingPoint;
     [SerializeField] private float radius;
     public AudioClip punchSound;
+    public AudioClip walkSound;
 
     protected override void Update()
     {
@@ -92,5 +93,10 @@ public class CapRobot : Robot
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(attackingPoint.position, radius);
+    }
+
+    public void PlayWalkSound()
+    {
+        audioSource.PlayOneShot(walkSound);
     }
 }

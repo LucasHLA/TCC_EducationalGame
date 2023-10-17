@@ -25510,6 +25510,7 @@ MonoBehaviour:
   letterDrop: {fileID: 441224614}
   startParticle: {fileID: 321037499}
   bearAttackSound: {fileID: 8300000, guid: 31f7439a91b119f41a7c3056cbd0f3e3, type: 3}
+  bearHitSound: {fileID: 8300000, guid: d6f62db2248511b4f8fb09e5b52cbec8, type: 3}
   pushForce: -10
   spinForce: 0
   wakeDistance: 16
@@ -25644,7 +25645,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -62409,6 +62410,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3202403226467132096, guid: ae73185cf386c3f4ca9a5fe1ab2525c5, type: 3}
+      propertyPath: walkSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c6c13a932c33b3b4db6fbcf6ae090f65, type: 3}
     - target: {fileID: 3202403226467132096, guid: ae73185cf386c3f4ca9a5fe1ab2525c5, type: 3}
       propertyPath: collectSound
       value: 

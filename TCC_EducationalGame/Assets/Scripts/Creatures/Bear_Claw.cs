@@ -37,4 +37,9 @@ public class Bear_Claw : MonoBehaviour
 
         Gizmos.DrawWireSphere(pos, attackRange);
     }
+
+    public void PlayBearAttackSound()
+    {
+        GameObject.FindObjectOfType<Bear>().PlayAttackSound();
+    }
 }

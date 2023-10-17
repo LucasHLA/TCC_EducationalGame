@@ -16,6 +16,7 @@ public class Bear : MonoBehaviour
     public ParticleSystem startParticle;
     private AudioSource audioSource;
     public AudioClip bearAttackSound;
+    public AudioClip bearHitSound;
 
     [SerializeField] private float pushForce;
     [SerializeField] private float spinForce;
@@ -101,6 +102,7 @@ public class Bear : MonoBehaviour
     IEnumerator StartStopParticle()
     {
         startParticle.Play();
+        audioSource.PlayOneShot(bearHitSound);
         yield return new WaitForSeconds(1f);
         startParticle.Stop();
     }

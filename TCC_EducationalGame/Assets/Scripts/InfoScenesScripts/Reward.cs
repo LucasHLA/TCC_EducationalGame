@@ -79,7 +79,7 @@ public class Reward : MonoBehaviour
                 GameObject.FindObjectOfType<PosGameController>().unlockSeasons = true;
             }
 
-            if(finalTime <= 360)
+            if(finalTime <= 420)
             {
                 objectImage.sprite = posGameImages[2].sprite;
                 GameObject.FindObjectOfType<PosGameController>().unlockRobots = true;

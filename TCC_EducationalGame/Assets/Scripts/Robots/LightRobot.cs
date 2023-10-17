@@ -10,6 +10,7 @@ public class LightRobot : Robot
     private Collider2D col;
     [SerializeField] private float jumpForce;
     public AudioClip flashlightSound;
+    public AudioClip walkSound;
 
     private void Start()
     {
@@ -40,6 +41,10 @@ public class LightRobot : Robot
             {
                 state = State.Special;
             }
+            else if (col.IsTouchingLayers(ground))
+            {
+                state = State.Walk;
+            }
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
         else if (horizontal < 0)
@@ -48,6 +53,10 @@ public class LightRobot : Robot
             if (usingSpecial)
             {
                 state = State.Special;
+            }
+            else if (col.IsTouchingLayers(ground))
+            {
+                state = State.Walk;
             }
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
@@ -88,5 +97,10 @@ public class LightRobot : Robot
                 usingSpecial = true;
             }
         }
+    }
+
+    public void PlayWalkSound()
+    {
+        audioSource.PlayOneShot(walkSound);
     }
 }

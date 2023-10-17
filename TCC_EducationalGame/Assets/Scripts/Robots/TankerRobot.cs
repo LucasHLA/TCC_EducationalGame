@@ -6,6 +6,7 @@ public class TankerRobot : Robot
 {
     [Header("Shooting Related")]
     private bool isShooting;
+    public AudioClip shootSound;
 
     [Header("Bullet related")]
     public GameObject bulletPrefab;
@@ -82,6 +83,7 @@ public class TankerRobot : Robot
         {
             state = State.Special;
             isShooting = true;
+            audioSource.PlayOneShot(shootSound);
             StartCoroutine(OnShooting());
             StartCoroutine(AfterShooting());
         }
@@ -90,6 +92,7 @@ public class TankerRobot : Robot
     private void Shoot()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        
 
         if(bullets > 0)
         {
