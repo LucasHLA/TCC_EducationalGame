@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HelperRobot : Robot
 {
-
+    public AudioClip walkSound;
     protected override void Update()
     {
         base.Update();
@@ -32,5 +32,10 @@ public class HelperRobot : Robot
         {
             state = State.Idle;
         }
+    }
+
+    public void PlayWalkSound()
+    {
+        audioSource.PlayOneShot(walkSound);
     }
 }

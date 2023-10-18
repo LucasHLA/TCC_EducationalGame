@@ -13,10 +13,13 @@ public class PlayerSwitch : MonoBehaviour
     public GameObject playerCamera;
     public GameObject robotCamera;
 
+    private AudioSource audioSource;
+    public AudioClip switchSound;
 
     private void Start()
     {
         activeRobot = GameObject.FindGameObjectWithTag("Robot").GetComponent<Robot>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -31,6 +34,7 @@ public class PlayerSwitch : MonoBehaviour
     {
         if (playerIsActive)
         {
+            audioSource.PlayOneShot(switchSound);
             player.enabled = false;
             robot.enabled = true;
             playerIsActive = false;
@@ -39,6 +43,7 @@ public class PlayerSwitch : MonoBehaviour
         }
         else
         {
+            audioSource.PlayOneShot(switchSound);
             player.enabled = true;
             robot.enabled = false;
             playerIsActive = true;
