@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coloringImage: {fileID: 1396543105}
-  nome: Cientista
+  nome: 
   posGameImages:
   - {fileID: 1854255256}
   - {fileID: 1261779177}
@@ -2413,7 +2413,7 @@ MonoBehaviour:
   winterTime: 
   finalTime: 
   accumulatedTime: 0
-  totalTime1: 360
+  totalTime1: 660
   totalTime2: 0
   totalTime3: 0
   totalTime4: 0

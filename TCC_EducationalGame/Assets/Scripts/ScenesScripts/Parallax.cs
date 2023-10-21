@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform.position.x);
+        
         transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
 
         

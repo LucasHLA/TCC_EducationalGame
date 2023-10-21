@@ -70,18 +70,22 @@ public class Reward : MonoBehaviour
             if (finalTime <= 960)
             {
                 objectImage.sprite = posGameImages[0].sprite;
+                nome = "Cientista";
                 GameObject.FindObjectOfType<PosGameController>().unlockCientist = true;
+                
             }
 
             if(finalTime <= 660)
             {
                 objectImage.sprite = posGameImages[1].sprite;
+                nome = "Estacoes";
                 GameObject.FindObjectOfType<PosGameController>().unlockSeasons = true;
             }
 
             if(finalTime <= 420)
             {
                 objectImage.sprite = posGameImages[2].sprite;
+                nome = "Robos";
                 GameObject.FindObjectOfType<PosGameController>().unlockRobots = true;
             }
         }
