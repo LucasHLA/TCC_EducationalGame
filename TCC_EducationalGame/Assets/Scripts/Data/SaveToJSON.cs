@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 
 public class SaveToJSON : MonoBehaviour
@@ -66,7 +67,7 @@ public class SaveToJSON : MonoBehaviour
     {
         string json = File.ReadAllText(savePath);
         saveData = JsonUtility.FromJson<SaveData>(json);
-
+        //string sceneName = SceneManager.GetActiveScene().name;
 
         GameObject.FindObjectOfType<PosGameController>().posGameActive = saveData.posGameActive;
         GameObject.FindObjectOfType<PosGameController>().unlockSpring = saveData.springGallery;
@@ -77,14 +78,17 @@ public class SaveToJSON : MonoBehaviour
         GameObject.FindObjectOfType<PosGameController>().unlockSeasons = saveData.seasonsGallery;
         GameObject.FindObjectOfType<PosGameController>().unlockRobots = saveData.robotsGallery;
         Debug.Log("Load");
+        //SceneManager.LoadScene(sceneName);
     }
 
     public void DeleteData()
     {
+        string sceneName = SceneManager.GetActiveScene().name;
 
         if (File.Exists(savePath))
         {
             File.Delete(savePath);
+            SceneManager.LoadScene(sceneName);
         }
         else
         {
