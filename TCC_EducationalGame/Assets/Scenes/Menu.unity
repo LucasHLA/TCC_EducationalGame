@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27173713d86c804f82dd73dd89e5cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posGameActive: 1
+  posGameActive: 0
   posGameEffects: 0
   afterPosGame: 0
   startChronometer: 0
@@ -9141,6 +9141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54f57c01277a9c45bf0966d4c80c684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sucessText: {fileID: 0}
 --- !u!4 &2120347118
 Transform:
   m_ObjectHideFlags: 0

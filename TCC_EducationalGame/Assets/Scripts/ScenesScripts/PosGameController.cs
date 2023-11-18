@@ -55,7 +55,15 @@ public class PosGameController : MonoBehaviour
         AcumulateTime();
         FinalTime();
         ActivatePosGame();
-        UnlockGalleryImages();
+
+        if (posGameEffects)
+        {
+           UnlockGalleryImages();
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void AcumulateTime()

@@ -120,7 +120,7 @@ public class Player : MonoBehaviour
     }
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && col.IsTouchingLayers(ground) && canJump)
+        if (Input.GetKeyDown(KeyCode.W) && col.IsTouchingLayers(ground) && canJump)
         {
             state = State.Jump;
             audioSource.PlayOneShot(jumpSound);
