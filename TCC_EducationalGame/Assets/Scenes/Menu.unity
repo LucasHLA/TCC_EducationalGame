@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27173713d86c804f82dd73dd89e5cca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posGameActive: 0
+  posGameActive: 1
   posGameEffects: 0
   afterPosGame: 0
   startChronometer: 0
